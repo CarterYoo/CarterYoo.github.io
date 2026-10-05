@@ -21,7 +21,7 @@ python3 -m http.server 8917 --directory dist
 | `_data/main_info.yaml` | `name`, `title`, `subtitle`, `email`, `secondary_email`, `profile_pic`, `profile_alt`, `cv`, `github`, `linkedin`, `google_scholar`, `twitter` |
 | `_data/content.yaml` | `about`와 `interests`는 문자열 목록. `news`: `date`, `text`, `url`. `education`: `school`, `time`, `degree`, `description`. `service`: `title`, `time`, `role`, `description`, `url` |
 | `_data/publications.yaml` | `papers` 목록: `title`, `authors`, `venue`, `paper_pdf`, `code`, `dataset`, `huggingface`, `selected`, `type` |
-| `_data/projects.yaml` | `projects` 목록: `title`, `subtitle`, `technologies`, `url`, `thumbnail`, `selected` |
+| `_data/projects.yaml` | `projects` 목록: `title`, `subtitle`, `context`, `technologies`, `url`, `thumbnail`, `image_alt`, `image_caption`, `image_width`, `image_height`, `selected` |
 | `_data/experience.yaml` | `experiences` 목록: `place`, `time`, `title`, `subtitle`, `description`, `url`, `category` |
 | `_config.yml` | 사이트 제목·설명·주소, `baseurl`, 언어와 `updated` 표시 날짜 |
 
@@ -38,7 +38,7 @@ profile_pic: "/assets/profile-pics/seunghyun.jpg"
 profile_alt: "Seunghyun Yoo"
 ```
 
-사용자가 제공한 `SeunghyunYoo_CV (2).pdf`를 내용 변경 없이 [assets/cv/Seunghyun_Yoo_CV.pdf](assets/cv/Seunghyun_Yoo_CV.pdf)에 복사했습니다. 본문과 LinkedIn·논문·프로젝트 링크는 이 CV 및 사용자가 직접 제공한 프로필 정보에 근거합니다. 세 번째 preprint는 CV에 저자 목록과 URL이 없어 링크를 비워 두었습니다. Google Scholar와 X도 확인된 주소가 없어 비어 있습니다.
+사용자가 제공한 `SeunghyunYoo_CV (2).pdf`를 내용 변경 없이 [assets/cv/Seunghyun_Yoo_CV.pdf](assets/cv/Seunghyun_Yoo_CV.pdf)에 복사했습니다. 본문과 LinkedIn·논문·프로젝트 링크는 이 CV 및 사용자가 직접 제공한 프로필 정보에 근거합니다. Google Scholar와 X도 확인된 주소가 없어 비어 있습니다.
 
 ## 배포
 
@@ -47,3 +47,5 @@ profile_alt: "Seunghyun Yoo"
 프로젝트 루트의 Jekyll 소스도 GitHub Pages에서 사용할 수 있습니다. `username.github.io` 형태의 사용자 사이트라면 `_config.yml`의 `url`을 해당 주소로 바꾸고 `baseurl: ""`을 유지합니다. Sites 주소를 GitHub Pages 주소로 변경할 때 Open Graph 주소도 이 설정을 따릅니다.
 
 템플릿 출처와 라이브러리 고지는 [ATTRIBUTION.md](ATTRIBUTION.md)에 기록했습니다.
+
+Projects는 Ethogram, Margin Arena, DLM-Control 세 개입니다. 수업 프로젝트와 LLMs as Deceptive Agents 프리프린트는 사용자 요청에 따라 제외했습니다. 프로젝트 WebP와 출처는 `assets/projects/`에 있으며 이미지를 클릭하면 원본 크기로 열립니다.

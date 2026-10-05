@@ -1,6 +1,6 @@
 about:
-  - "I'm a Research Fellow at SPAR and an Undergraduate Researcher at the Governance and Responsible AI Lab (GRAIL) / Purdue AI Forge. I'm pursuing a B.S. in Artificial Intelligence with a minor in Mathematics at Purdue University."
-  - "My research spans mechanistic interpretability, diffusion language models, AI safety, and technical AI governance. Recent work examines policy auditing with internal model evidence, SAE feature evolution during denoising, and prompt injection in retrieval-augmented generation."
+  - "I'm a Research Fellow at SPAR and an Undergraduate Researcher at the Governance and Responsible AI Lab (GRAIL). I'm pursuing a B.S. in Artificial Intelligence with a minor in Mathematics at Purdue University."
+  - "My research spans mechanistic interpretability, diffusion language models, AI safety, and technical AI governance. Recent work examines policy auditing with internal model evidence, SAE feature evolution during denoising, and behaviour in multi-agent systems."
 interests:
   - "Mechanistic interpretability"
   - "Diffusion language models"

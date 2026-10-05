@@ -1,19 +1,43 @@
-projects:
-  - title: "Denoising Trajectories for Diffusion Language Model Control"
-    subtitle: "AI Control Hackathon, Apart Research / Redwood Research · Mar. 2026. Built SAE-based monitoring and steering for LLaDA-8B-Instruct. Attacks were detected at mean denoising step 9.60 versus 63.00 for output checks; steering gains remained preliminary."
-    thumbnail: ""
-    url: "https://github.com/CarterYoo/DLM-Control"
-    link_label: "Code"
-    selected: "y"
-  - title: "Prompt Injection and Mechanistic Analysis in RAG"
-    subtitle: "CS 390, Purdue University · Feb. 2026. Evaluated BM25 RAG attacks on HotpotQA for Qwen2.5 0.5B and Gemma 2 2B, using attention analysis, probing, activation patching, and sparse features to localize attack effects and compare defenses."
-    thumbnail: ""
-    url: "https://drive.google.com/file/d/1WzA3P5LC1_A6gX0bRmgCa4jj5s0ilZ7d/view"
-    link_label: "Report"
-    selected: "y"
-  - title: "Prompting and Retrieval Evaluation"
-    subtitle: "CS 390, Purdue University · Jan. 2026 - Mar. 2026. Evaluated Llama 3.1 8B Instruct on 1,110 HotpotQA examples. Wikipedia retrieval reached 43.65 F1 versus 28.34 for BM25 demonstration retrieval at the best tested settings."
-    thumbnail: ""
-    url: "https://drive.google.com/file/d/1nrs7tHZZHrc8iFllp4T2LDRIHfnosAEb/view"
-    link_label: "Report"
-    selected: "y"
+{
+  "projects": [
+    {
+      "title": "Ethogram",
+      "context": "AI Village × Grove Research AI Swarm Dynamics Hackathon · Oct. 2026",
+      "subtitle": "An evidence-linked behaviour catalogue and interactive atlas for multi-agent logs. Tracks how behaviours change and spread across AI agents, with every claim linked to the events behind it.",
+      "thumbnail": "/assets/projects/ethogram.webp",
+      "image_alt": "Ethogram behaviour atlas showing clusters, influence links, and a timeline of changes in AI agent behaviour.",
+      "image_caption": "Behaviour atlas from the project demo.",
+      "image_width": 960,
+      "image_height": 540,
+      "url": "https://github.com/CarterYoo/ethogram",
+      "link_label": "Code",
+      "selected": "y"
+    },
+    {
+      "title": "Margin Arena",
+      "context": "Agent behaviour under resource limits",
+      "subtitle": "A reproducible environment for studying AI agents under token, time, verification, tool-call, and session limits. Connects external tasks with inspectable model records.",
+      "thumbnail": "/assets/projects/margin-arena.webp",
+      "image_alt": "Margin Arena graphic showing five resource limits: tokens, time, verification, tool calls, and sessions.",
+      "image_caption": "Five measurable resource limits.",
+      "image_width": 840,
+      "image_height": 870,
+      "url": "https://github.com/CarterYoo/margin-arena",
+      "link_label": "Code",
+      "selected": "y"
+    },
+    {
+      "title": "DLM-Control",
+      "context": "AI Control Hackathon · Apart Research / Redwood Research · Mar. 2026",
+      "subtitle": "SAE-based monitoring and steering for diffusion language models. Trajectory monitoring detects attacks at a mean denoising step of 9.60, compared with 63.00 for output-only checks on the main benchmark; steering gains remain preliminary.",
+      "thumbnail": "/assets/projects/dlm-control.webp",
+      "image_alt": "Mean attack detection step on the main benchmark: trajectory SAE monitoring 9.60, output-only monitoring 63.00.",
+      "image_caption": "Mean detection step on the main benchmark.",
+      "image_width": 1280,
+      "image_height": 860,
+      "url": "https://github.com/CarterYoo/DLM-Control",
+      "link_label": "Code",
+      "selected": "y"
+    }
+  ]
+}

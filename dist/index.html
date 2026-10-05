@@ -60,7 +60,7 @@
     </nav>
     <main id="main-content"><section class="docs-section" id="about" aria-labelledby="about-heading">
   <h2 id="about-heading">About</h2>
-  <p>I&#39;m a Research Fellow at SPAR and an Undergraduate Researcher at the Governance and Responsible AI Lab (GRAIL) / Purdue AI Forge. I&#39;m pursuing a B.S. in Artificial Intelligence with a minor in Mathematics at Purdue University.</p><p>My research spans mechanistic interpretability, diffusion language models, AI safety, and technical AI governance. Recent work examines policy auditing with internal model evidence, SAE feature evolution during denoising, and prompt injection in retrieval-augmented generation.</p>
+  <p>I&#39;m a Research Fellow at SPAR and an Undergraduate Researcher at the Governance and Responsible AI Lab (GRAIL). I&#39;m pursuing a B.S. in Artificial Intelligence with a minor in Mathematics at Purdue University.</p><p>My research spans mechanistic interpretability, diffusion language models, AI safety, and technical AI governance. Recent work examines policy auditing with internal model evidence, SAE feature evolution during denoising, and behaviour in multi-agent systems.</p>
   <div class="research-interests"><span class="interest-label">Interests</span><span class="interest">Mechanistic interpretability</span><span class="interest">Diffusion language models</span><span class="interest">AI safety</span><span class="interest">Technical AI governance</span></div>
 </section>
 
@@ -76,15 +76,69 @@
   
   
   
-  <h3 class="subsection-heading">Preprints</h3>
-  <article class="paper"><h3>LLMs as Deceptive Agents: How Role-Based Prompting Induces Semantic Ambiguity</h3><p class="paper-venue"><i>Preprint, 2025</i></p><div class="paper-buttons"></div></article>
+  
+  
   <h3 class="subsection-heading">Workshop Papers</h3>
   <article class="paper"><h3>White Box Evidence Packages for Policy Audit Reports</h3><p><b>Seunghyun Yoo</b></p><p class="paper-venue"><i>Second Workshop on Technical AI Governance Research (TAIGR), ICML 2026</i></p><div class="paper-buttons"><a class="button" href="https://arxiv.org/abs/2607.21462" target="_blank" rel="noopener noreferrer">Paper</a></div></article><article class="paper"><h3>Feature Evolution in Diffusion Language Models</h3><p>Meliksah Yorulmazlar, Justice Sefas, <b>Seunghyun Yoo</b>, and Lulu Shao</p><p class="paper-venue"><i>Non-Autoregressive Language Models Workshop, COLM 2026 · Poster</i></p><div class="paper-buttons"><a class="button" href="https://openreview.net/forum?id=3LYTk2idOP" target="_blank" rel="noopener noreferrer">Paper</a></div></article>
   
 </section>
 <section class="docs-section" id="projects" aria-labelledby="projects-heading">
   <h2 id="projects-heading">Projects</h2>
-  <article class="paper project-row"><div><h3><a href="https://github.com/CarterYoo/DLM-Control" target="_blank" rel="noopener noreferrer">Denoising Trajectories for Diffusion Language Model Control <span aria-hidden="true">↗</span></a></h3><p>AI Control Hackathon, Apart Research / Redwood Research · Mar. 2026. Built SAE-based monitoring and steering for LLaDA-8B-Instruct. Attacks were detected at mean denoising step 9.60 versus 63.00 for output checks; steering gains remained preliminary.</p></div></article><article class="paper project-row"><div><h3><a href="https://drive.google.com/file/d/1WzA3P5LC1_A6gX0bRmgCa4jj5s0ilZ7d/view" target="_blank" rel="noopener noreferrer">Prompt Injection and Mechanistic Analysis in RAG <span aria-hidden="true">↗</span></a></h3><p>CS 390, Purdue University · Feb. 2026. Evaluated BM25 RAG attacks on HotpotQA for Qwen2.5 0.5B and Gemma 2 2B, using attention analysis, probing, activation patching, and sparse features to localize attack effects and compare defenses.</p></div></article><article class="paper project-row"><div><h3><a href="https://drive.google.com/file/d/1nrs7tHZZHrc8iFllp4T2LDRIHfnosAEb/view" target="_blank" rel="noopener noreferrer">Prompting and Retrieval Evaluation <span aria-hidden="true">↗</span></a></h3><p>CS 390, Purdue University · Jan. 2026 - Mar. 2026. Evaluated Llama 3.1 8B Instruct on 1,110 HotpotQA examples. Wikipedia retrieval reached 43.65 F1 versus 28.34 for BM25 demonstration retrieval at the best tested settings.</p></div></article>
+  
+  <article class="paper project-row">
+    
+    <figure class="project-figure">
+      <a class="project-image-link" href="/assets/projects/ethogram.webp" target="_blank" rel="noopener noreferrer" aria-label="View Ethogram figure at full size">
+        <img class="project-thumbnail" src="/assets/projects/ethogram.webp" alt="Ethogram behaviour atlas showing clusters, influence links, and a timeline of changes in AI agent behaviour." loading="lazy" width="960" height="540">
+      </a>
+      <figcaption>Behaviour atlas from the project demo. <span aria-hidden="true">↗</span></figcaption>
+    </figure>
+    
+    <div class="project-details">
+      <p class="project-context">AI Village × Grove Research AI Swarm Dynamics Hackathon · Oct. 2026</p>
+      <h3>Ethogram</h3>
+      <p>An evidence-linked behaviour catalogue and interactive atlas for multi-agent logs. Tracks how behaviours change and spread across AI agents, with every claim linked to the events behind it.</p>
+      
+      <div class="paper-buttons"><a class="button" href="https://github.com/CarterYoo/ethogram" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </article>
+  
+  <article class="paper project-row">
+    
+    <figure class="project-figure">
+      <a class="project-image-link" href="/assets/projects/margin-arena.webp" target="_blank" rel="noopener noreferrer" aria-label="View Margin Arena figure at full size">
+        <img class="project-thumbnail" src="/assets/projects/margin-arena.webp" alt="Margin Arena graphic showing five resource limits: tokens, time, verification, tool calls, and sessions." loading="lazy" width="840" height="870">
+      </a>
+      <figcaption>Five measurable resource limits. <span aria-hidden="true">↗</span></figcaption>
+    </figure>
+    
+    <div class="project-details">
+      <p class="project-context">Agent behaviour under resource limits</p>
+      <h3>Margin Arena</h3>
+      <p>A reproducible environment for studying AI agents under token, time, verification, tool-call, and session limits. Connects external tasks with inspectable model records.</p>
+      
+      <div class="paper-buttons"><a class="button" href="https://github.com/CarterYoo/margin-arena" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </article>
+  
+  <article class="paper project-row">
+    
+    <figure class="project-figure">
+      <a class="project-image-link" href="/assets/projects/dlm-control.webp" target="_blank" rel="noopener noreferrer" aria-label="View DLM-Control figure at full size">
+        <img class="project-thumbnail" src="/assets/projects/dlm-control.webp" alt="Mean attack detection step on the main benchmark: trajectory SAE monitoring 9.60, output-only monitoring 63.00." loading="lazy" width="1280" height="860">
+      </a>
+      <figcaption>Mean detection step on the main benchmark. <span aria-hidden="true">↗</span></figcaption>
+    </figure>
+    
+    <div class="project-details">
+      <p class="project-context">AI Control Hackathon · Apart Research / Redwood Research · Mar. 2026</p>
+      <h3>DLM-Control</h3>
+      <p>SAE-based monitoring and steering for diffusion language models. Trajectory monitoring detects attacks at a mean denoising step of 9.60, compared with 63.00 for output-only checks on the main benchmark; steering gains remain preliminary.</p>
+      
+      <div class="paper-buttons"><a class="button" href="https://github.com/CarterYoo/DLM-Control" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </article>
+  
 </section>
 <section class="docs-section" id="service" aria-labelledby="service-heading">
   <h2 id="service-heading">Service &amp; Leadership</h2>
@@ -92,7 +146,7 @@
 </section>
 <section class="docs-section" id="resume" aria-labelledby="resume-heading">
   <div class="section-title-row"><h2 id="resume-heading">Vitæ</h2><a class="button cv-link" href="/assets/cv/Seunghyun_Yoo_CV.pdf" target="_blank" rel="noopener noreferrer">Download CV <span aria-hidden="true">↓</span></a></div>
-  <ul class="timeline"><li><div class="direction-l"><div class="flag-wrapper"><span class="flag">SPAR</span><span class="time-wrapper"><span class="time">Sep. 2026 - Present</span></span></div><div class="desc"><b>Research Fellow</b><br>Mentors: Yuxiao Li and Di Wu · Remote</div></div></li><li><div class="direction-l"><div class="flag-wrapper"><span class="flag">Governance and Responsible AI Lab (GRAIL) / Purdue AI Forge</span><span class="time-wrapper"><span class="time">Jun. 2025 - Present</span></span></div><div class="desc"><b>Undergraduate Researcher</b><br>Purdue University</div></div></li><li><div class="direction-l"><div class="flag-wrapper"><span class="flag">Algoverse AI Safety Fellowship</span><span class="time-wrapper"><span class="time">Feb. 2026 - Jun. 2026</span></span></div><div class="desc"><b>Researcher</b><br>Supervisor: Justice Sefas · Remote</div></div></li><li><div class="direction-l"><div class="flag-wrapper"><span class="flag">DeepLearning.AI</span><span class="time-wrapper"><span class="time">Dec. 2024 - Apr. 2025</span></span></div><div class="desc"><b>Short Course Tester</b><br>Remote</div></div></li><li><div class="direction-r"><div class="flag-wrapper"><span class="flag">Purdue University</span><span class="time-wrapper"><span class="time">Aug. 2024 - Expected Dec. 2027</span></span></div><div class="desc"><b>B.S. in Artificial Intelligence</b><br>Minor in Mathematics · West Lafayette, IN</div></div></li></ul>
+  <ul class="timeline"><li><div class="direction-l"><div class="flag-wrapper"><span class="flag">SPAR</span><span class="time-wrapper"><span class="time">Sep. 2026 - Present</span></span></div><div class="desc"><b>Research Fellow</b><br>Mentors: Yuxiao Li and Di Wu · Remote</div></div></li><li><div class="direction-l"><div class="flag-wrapper"><span class="flag">Governance and Responsible AI Lab (GRAIL)</span><span class="time-wrapper"><span class="time">Jun. 2025 - Present</span></span></div><div class="desc"><b>Undergraduate Researcher</b><br>Purdue University</div></div></li><li><div class="direction-l"><div class="flag-wrapper"><span class="flag">Algoverse AI Safety Fellowship</span><span class="time-wrapper"><span class="time">Feb. 2026 - Jun. 2026</span></span></div><div class="desc"><b>Researcher</b><br>Supervisor: Justice Sefas · Remote</div></div></li><li><div class="direction-l"><div class="flag-wrapper"><span class="flag">DeepLearning.AI</span><span class="time-wrapper"><span class="time">Dec. 2024 - Apr. 2025</span></span></div><div class="desc"><b>Short Course Tester</b><br>Remote</div></div></li><li><div class="direction-r"><div class="flag-wrapper"><span class="flag">Purdue University</span><span class="time-wrapper"><span class="time">Aug. 2024 - Expected Dec. 2027</span></span></div><div class="desc"><b>B.S. in Artificial Intelligence</b><br>Minor in Mathematics · West Lafayette, IN</div></div></li></ul>
 </section>
 </main>
     <footer class="footer">

@@ -28,3 +28,11 @@ Academicons의 라이선스 구분은 함께 보존한 `libs/external/academicon
 ## 홈페이지 내용
 
 Seunghyun Yoo의 프로필·연락처는 사용자가 직접 제공한 정보이며, 학력·논문·경력·프로젝트·활동과 외부 링크는 사용자가 제공한 CV에 근거합니다. `assets/cv/Seunghyun_Yoo_CV.pdf`는 제공된 CV의 원본 복사본입니다.
+
+## 프로젝트 이미지
+
+- Ethogram: [저장소 데모 WebP](https://github.com/CarterYoo/ethogram/blob/main/docs/media/ethogram-demo.webp)의 정적 프레임.
+- Margin Arena: [저장소 compact banner](https://github.com/CarterYoo/margin-arena/blob/main/docs/assets/margin-banner-compact.png)를 WebP로 변환.
+- DLM-Control: [README의 main attack benchmark](https://github.com/CarterYoo/DLM-Control#current-headline-numbers)에 보고된 평균 탐지 시점 9.604와 63.000을 바 차트로 시각화. 화면에는 소수점 두 자리로 표시합니다.
+
+세 이미지는 사용자가 요청한 본인 프로젝트 소개용으로 구성했습니다. 원본 경로와 기준 커밋, 변환 정보는 `assets/projects/sources.json`에 기록했습니다.

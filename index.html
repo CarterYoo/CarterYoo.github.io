@@ -32,7 +32,25 @@ layout: default
 </section>
 <section class="docs-section" id="projects" aria-labelledby="projects-heading">
   <h2 id="projects-heading">Projects</h2>
-  {% for project in site.data.projects.projects %}<article class="paper project-row">{% if project.thumbnail and project.thumbnail != '' %}<img class="project-thumbnail" src="{{ project.thumbnail | prepend: site.baseurl }}" alt="{{ project.title | escape }}" loading="lazy">{% endif %}<div><h3>{% if project.url and project.url != '' %}<a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.title | escape }} <span aria-hidden="true">↗</span></a>{% else %}{{ project.title | escape }}{% endif %}</h3><p>{{ project.subtitle | escape }}</p>{% if project.technologies %}<p class="project-tech">{{ project.technologies | escape }}</p>{% endif %}</div></article>{% endfor %}
+  {% for project in site.data.projects.projects %}
+  <article class="paper project-row">
+    {% if project.thumbnail and project.thumbnail != '' %}
+    <figure class="project-figure">
+      <a class="project-image-link" href="{{ project.thumbnail | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer" aria-label="View {{ project.title | escape }} figure at full size">
+        <img class="project-thumbnail" src="{{ project.thumbnail | prepend: site.baseurl }}" alt="{{ project.image_alt | default: project.title | escape }}" loading="lazy" width="{{ project.image_width }}" height="{{ project.image_height }}">
+      </a>
+      {% if project.image_caption %}<figcaption>{{ project.image_caption | escape }} <span aria-hidden="true">↗</span></figcaption>{% endif %}
+    </figure>
+    {% endif %}
+    <div class="project-details">
+      {% if project.context %}<p class="project-context">{{ project.context | escape }}</p>{% endif %}
+      <h3>{{ project.title | escape }}</h3>
+      <p>{{ project.subtitle | escape }}</p>
+      {% if project.technologies %}<p class="project-tech">{{ project.technologies | escape }}</p>{% endif %}
+      {% if project.url and project.url != '' %}<div class="paper-buttons"><a class="button" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.link_label | default: 'Code' | escape }} <span aria-hidden="true">↗</span></a></div>{% endif %}
+    </div>
+  </article>
+  {% endfor %}
 </section>
 <section class="docs-section" id="service" aria-labelledby="service-heading">
   <h2 id="service-heading">Service &amp; Leadership</h2>
