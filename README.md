@@ -31,7 +31,7 @@ python3 -m http.server 8917 --directory dist
 
 ## 프로필 사진과 CV
 
-사진은 현재 placeholder입니다. 예를 들어 `assets/profile-pics/seunghyun.jpg`를 추가한 뒤 다음 필드를 변경합니다.
+사용자가 제공한 사진을 `assets/profile-pics/seunghyun-yoo.jpeg`에 넣었습니다. 사진을 바꿀 때는 예를 들어 `assets/profile-pics/seunghyun.jpg`를 추가한 뒤 다음 필드를 변경합니다.
 
 ```yaml
 profile_pic: "/assets/profile-pics/seunghyun.jpg"
