@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<section class="docs-section" id="about" aria-labelledby="about-heading">
+  <h2 id="about-heading">About</h2>
+  {% for paragraph in site.data.content.about %}<p>{{ paragraph | escape }}</p>{% endfor %}
+  {% if site.data.content.interests.size > 0 %}<div class="research-interests"><span class="interest-label">Interests</span>{% for interest in site.data.content.interests %}<span class="interest">{{ interest | escape }}</span>{% endfor %}</div>{% endif %}
+</section>
+{% if site.data.content.news.size > 0 %}
+<section class="docs-section" id="news" aria-labelledby="news-heading">
+  <h2 id="news-heading">News</h2>
+  <ul>{% for item in site.data.content.news %}<li><time class="news-date">{{ item.date | escape }}</time><span class="news-text">{% if item.url and item.url != '' %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.text | escape }}</a>{% else %}{{ item.text | escape }}{% endif %}</span></li>{% endfor %}</ul>
+</section>
+{% endif %}
+<section class="docs-section" id="education" aria-labelledby="education-heading">
+  <h2 id="education-heading">Education</h2>
+  {% for edu in site.data.content.education %}
+  <article class="paper"><div class="entry-heading"><h3>{{ edu.school | escape }}</h3><span class="entry-date">{{ edu.time | escape }}</span></div><p>{{ edu.degree | escape }}</p>{% if edu.description %}<p class="secondary-text">{{ edu.description | escape }}</p>{% endif %}</article>
+  {% endfor %}
+</section>
+<section class="docs-section" id="publications" aria-labelledby="publications-heading">
+  <div class="section-title-row"><h2 id="publications-heading">Publications</h2>{% if site.data.main_info.google_scholar != '' %}<a class="subtle-link" href="{{ site.data.main_info.google_scholar }}" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>{% endif %}</div>
+  {% if site.data.publications.papers.size > 0 %}
+  
+  {% assign selected_papers = site.data.publications.papers | where: 'selected', 'y' %}
+  {% assign preprints = selected_papers | where: 'type', 'preprint' %}
+  {% if preprints.size > 0 %}<h3 class="subsection-heading">Preprints</h3>{% endif %}
+  {% for paper in preprints %}<article class="paper"><h3>{{ paper.title | escape }}</h3>{% if paper.authors and paper.authors != '' %}<p>{{ paper.authors }}</p>{% endif %}<p class="paper-venue"><i>{{ paper.venue | escape }}</i></p><div class="paper-buttons">{% if paper.paper_pdf and paper.paper_pdf != '' %}<a class="button" href="{{ paper.paper_pdf }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}{% if paper.code %}<a class="button" href="{{ paper.code }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}{% if paper.dataset %}<a class="button" href="{{ paper.dataset }}" target="_blank" rel="noopener noreferrer">Dataset</a>{% endif %}{% if paper.huggingface %}<a class="button" href="{{ paper.huggingface }}" target="_blank" rel="noopener noreferrer">Hugging Face</a>{% endif %}</div></article>{% endfor %}
+  {% if selected_papers.size > preprints.size %}<h3 class="subsection-heading">Workshop Papers</h3>{% endif %}
+  {% for paper in selected_papers %}{% if paper.type != 'preprint' %}<article class="paper"><h3>{{ paper.title | escape }}</h3>{% if paper.authors and paper.authors != '' %}<p>{{ paper.authors }}</p>{% endif %}<p class="paper-venue"><i>{{ paper.venue | escape }}</i></p><div class="paper-buttons">{% if paper.paper_pdf and paper.paper_pdf != '' %}<a class="button" href="{{ paper.paper_pdf }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}{% if paper.code %}<a class="button" href="{{ paper.code }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}{% if paper.dataset %}<a class="button" href="{{ paper.dataset }}" target="_blank" rel="noopener noreferrer">Dataset</a>{% endif %}{% if paper.huggingface %}<a class="button" href="{{ paper.huggingface }}" target="_blank" rel="noopener noreferrer">Hugging Face</a>{% endif %}</div></article>{% endif %}{% endfor %}
+  {% else %}<p class="secondary-text">Publications will be added here.</p>{% endif %}
+</section>
+<section class="docs-section" id="projects" aria-labelledby="projects-heading">
+  <h2 id="projects-heading">Projects</h2>
+  {% for project in site.data.projects.projects %}<article class="paper project-row">{% if project.thumbnail and project.thumbnail != '' %}<img class="project-thumbnail" src="{{ project.thumbnail | prepend: site.baseurl }}" alt="{{ project.title | escape }}" loading="lazy">{% endif %}<div><h3>{% if project.url and project.url != '' %}<a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.title | escape }} <span aria-hidden="true">↗</span></a>{% else %}{{ project.title | escape }}{% endif %}</h3><p>{{ project.subtitle | escape }}</p>{% if project.technologies %}<p class="project-tech">{{ project.technologies | escape }}</p>{% endif %}</div></article>{% endfor %}
+</section>
+<section class="docs-section" id="service" aria-labelledby="service-heading">
+  <h2 id="service-heading">Service &amp; Leadership</h2>
+  {% for item in site.data.content.service %}<article class="paper"><div class="entry-heading"><h3>{% if item.url and item.url != '' %}<a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</h3><span class="entry-date">{{ item.time | escape }}</span></div><p>{{ item.role | escape }}</p><p class="secondary-text">{{ item.description | escape }}</p></article>{% endfor %}
+</section>
+<section class="docs-section" id="resume" aria-labelledby="resume-heading">
+  <div class="section-title-row"><h2 id="resume-heading">Vitæ</h2>{% if site.data.main_info.cv != '' %}<a class="button cv-link" href="{{ site.data.main_info.cv | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">Download CV <span aria-hidden="true">↓</span></a>{% endif %}</div>
+  {% if site.data.experience.experiences.size > 0 %}<ul class="timeline">{% for exp in site.data.experience.experiences %}<li><div class="{% if exp.category == 'work' %}direction-l{% else %}direction-r{% endif %}"><div class="flag-wrapper"><span class="flag">{{ exp.place | escape }}</span><span class="time-wrapper"><span class="time">{{ exp.time | escape }}</span></span></div><div class="desc"><b>{{ exp.title | escape }}</b>{% if exp.subtitle %}<br>{{ exp.subtitle | escape }}{% endif %}</div></div></li>{% endfor %}</ul>{% endif %}
+</section>

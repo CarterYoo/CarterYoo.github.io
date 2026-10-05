@@ -1,0 +1,23 @@
+title: "Seunghyun Yoo — Personal Website"
+description: "Seunghyun Yoo — Research Fellow at SPAR and Undergraduate Researcher at GRAIL. AI research, publications, and projects."
+lang: en
+url: "https://personal-academic-homepage-oct5.seunghyunai.chatgpt.site"
+baseurl: ""
+updated: "October 2026"
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+exclude:
+  - README.md
+  - ATTRIBUTION.md
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - pnpm-lock.yaml
+  - node_modules
+  - vendor
+  - scripts
+  - dist
+  - .openai
+  - .sites-runtime

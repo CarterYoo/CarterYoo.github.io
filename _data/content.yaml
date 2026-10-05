@@ -1,0 +1,30 @@
+about:
+  - "I'm a Research Fellow at SPAR and an Undergraduate Researcher at the Governance and Responsible AI Lab (GRAIL) / Purdue AI Forge. I'm pursuing a B.S. in Artificial Intelligence with a minor in Mathematics at Purdue University."
+  - "My research spans mechanistic interpretability, diffusion language models, AI safety, and technical AI governance. Recent work examines policy auditing with internal model evidence, SAE feature evolution during denoising, and prompt injection in retrieval-augmented generation."
+interests:
+  - "Mechanistic interpretability"
+  - "Diffusion language models"
+  - "AI safety"
+  - "Technical AI governance"
+news: []
+education:
+  - school: "Purdue University"
+    time: "Aug. 2024 - Expected Dec. 2027"
+    degree: "B.S. in Artificial Intelligence"
+    description: "Minor in Mathematics · West Lafayette, IN"
+service:
+  - title: "Carter Student AI Research"
+    time: "Jan. 2025 - Present"
+    role: "Founder & Director"
+    description: "Organize weekly seminars on AI alignment and mechanistic interpretability, and mentor peers through reading and research projects. Delivered machine learning, deep learning, and NLP lectures to college and high school audiences, including students at USC and Binghamton, from January to August 2025."
+    url: ""
+  - title: "LikeLion US / OZ Lab"
+    time: "Sep. 2025 - Present"
+    role: "Lead, AI Study Group"
+    description: "Lead weekly sessions on Transformers, interpretability, and LLM agents for Purdue's Korean student community."
+    url: ""
+  - title: "Purdue University"
+    time: "Fall 2025"
+    role: "Undergraduate Teaching Assistant, TDM 101/102"
+    description: "Supported instruction and student problem solving in foundational data science coursework."
+    url: ""

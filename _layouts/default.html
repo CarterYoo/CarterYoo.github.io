@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title | escape }}</title>
+  <meta name="description" content="{{ site.description | escape }}">
+  <meta name="author" content="{{ site.data.main_info.name | escape }}">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title | escape }}">
+  <meta property="og:description" content="{{ site.description | escape }}">
+  {% if site.url != '' %}<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/">{% endif %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/libs/external/skeleton/normalize.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/libs/external/skeleton/skeleton.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/libs/external/font-awesome-4.7.0/css/font-awesome.min.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/libs/external/academicons-1.8.6/css/academicons.min.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/libs/external/timeline.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | prepend: site.baseurl }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | prepend: site.baseurl }}">
+  <script defer src="{{ '/libs/custom/my_js.js' | prepend: site.baseurl }}"></script>
+</head>
+<body>
+  <a class="skip-link" href="#about">Skip to content</a>
+  <div class="container">
+    <header class="header" id="top">
+      <div class="row profile-row">
+        <div class="four columns">
+          <img class="u-max-full-width profile-picture" src="{{ site.data.main_info.profile_pic | prepend: site.baseurl }}" alt="{{ site.data.main_info.profile_alt | escape }}" width="280" height="280">
+        </div>
+        <div class="seven columns offset-by-one main-description">
+          <p class="profile-eyebrow">PERSONAL WEBSITE</p>
+          <h1>{{ site.data.main_info.name | escape }}</h1>
+          <p class="profile-title">{{ site.data.main_info.title | escape }}</p>
+          <p class="profile-subtitle">{{ site.data.main_info.subtitle | escape }}</p>
+          {% if site.data.main_info.email != '' %}<p class="profile-email"><a href="mailto:{{ site.data.main_info.email | escape }}">{{ site.data.main_info.email | escape }}</a></p>{% endif %}
+          {% if site.data.main_info.secondary_email and site.data.main_info.secondary_email != '' %}<p class="profile-email"><a href="mailto:{{ site.data.main_info.secondary_email | escape }}">{{ site.data.main_info.secondary_email | escape }}</a></p>{% endif %}
+          <div class="social-links" aria-label="Profile links">
+            {% if site.data.main_info.cv != '' %}<a href="{{ site.data.main_info.cv | prepend: site.baseurl }}" aria-label="CV PDF" target="_blank" rel="noopener noreferrer"><i class="ai ai-cv-square" aria-hidden="true"></i></a>{% endif %}
+            {% if site.data.main_info.google_scholar != '' %}<a href="{{ site.data.main_info.google_scholar }}" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar-square" aria-hidden="true"></i></a>{% endif %}
+            {% if site.data.main_info.github != '' %}<a href="{{ site.data.main_info.github }}" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-square" aria-hidden="true"></i></a>{% endif %}
+            {% if site.data.main_info.linkedin != '' %}<a href="{{ site.data.main_info.linkedin }}" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>{% endif %}
+            {% if site.data.main_info.twitter != '' %}<a href="{{ site.data.main_info.twitter }}" aria-label="X" class="social-x" target="_blank" rel="noopener noreferrer">𝕏</a>{% endif %}
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar" aria-label="Main navigation">
+      <ul class="navbar-list">
+        <li class="navbar-item"><a class="navbar-link active" href="#about" aria-current="location">About</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#education">Education</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#publications">Publications</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#projects">Projects</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#service">Service</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#resume">Vitae</a></li>
+      </ul>
+    </nav>
+    <main id="main-content">{{ content }}</main>
+    <footer class="footer">
+      <div class="footer-top"><span>{{ site.data.main_info.name | escape }}</span><span>Last updated · {{ site.updated }}</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></div>
+      <p class="template-credit">Based on <a href="https://github.com/Dasol-Choi/dasol-choi.github.io" target="_blank" rel="noopener noreferrer">Dasol Choi's template</a></p>
+    </footer>
+  </div>
+</body>
+</html>

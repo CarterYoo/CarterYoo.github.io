@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="560" viewBox="0 0 560 560" role="img" aria-labelledby="title desc">
+  <title id="title">프로필 사진</title><desc id="desc">프로필 사진을 넣기 위한 회색 자리 표시자</desc>
+  <rect width="560" height="560" rx="20" fill="#f2f3f4"/>
+  <circle cx="280" cy="222" r="74" fill="#d1d5d9"/>
+  <path d="M138 405c0-80 64-133 142-133s142 53 142 133v19H138z" fill="#d1d5d9"/>
+  <text x="280" y="494" text-anchor="middle" font-family="sans-serif" font-size="21" fill="#71777d">PROFILE PHOTO</text>
+</svg>
