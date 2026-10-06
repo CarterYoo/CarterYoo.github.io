@@ -358,3 +358,26 @@ html { scroll-padding-top: 0; }
 .paper-row .project-image-link { min-height: 0; aspect-ratio: 8 / 5; background: #fff; }
 .project-row .project-image-link { min-height: 0; background: #fff; }
 .image-slot { aspect-ratio: 8 / 5; border-style: dashed; background: #fff; }
+
+/* About + live TFT rank card */
+.about-grid { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 36px; align-items: start; }
+.about-text { min-width: 0; }
+.tft-card { border: 1px solid #e3e8ec; border-radius: 6px; padding: 16px 16px 12px; background: #fbfcfd; font-size: 1.2rem; line-height: 1.5; }
+.tft-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.tft-card h3 { font-size: 1.35rem; font-weight: 600; margin: 0; letter-spacing: .02rem; }
+.tft-queue { color: #8b9197; font-size: 10px; letter-spacing: .08rem; text-transform: uppercase; white-space: nowrap; }
+.tft-card .tft-rank { display: flex; align-items: center; gap: 8px; margin: 10px 0 6px; font-size: 1.6rem; font-weight: 600; color: #25292d; }
+.tft-dot { width: 10px; height: 10px; border-radius: 50%; background: #c9cdd1; flex: none; }
+.tft-chart { display: block; width: 100%; height: auto; margin: 2px 0 8px; }
+.tft-chart text { font: 9px 'Raleway', sans-serif; fill: #8b9197; }
+.tft-sub { display: flex; justify-content: space-between; color: #8b9197; font-size: 10px; letter-spacing: .06rem; text-transform: uppercase; }
+.tft-places { display: flex; align-items: flex-end; gap: 3px; height: 46px; margin: 6px 0 10px; }
+.tft-place { flex: 1 1 0; min-width: 0; border-radius: 2px 2px 0 0; background: #c9cdd1; position: relative; }
+.tft-place.top4 { background: #2f5d86; }
+.tft-place.first { background: #c79b3b; }
+.tft-card .tft-meta { color: #667079; font-size: 1.1rem; margin: 0; }
+.tft-meta a { color: #1683a5; text-decoration: none; }
+.tft-meta a:hover { text-decoration: underline; }
+.tft-card .tft-legal { color: #a0a7ad; font-size: 9.5px; margin: 6px 0 0; line-height: 1.4; }
+.tft-empty { color: #8b9197; font-size: 1.1rem; }
+@media (max-width: 749px) { .about-grid { grid-template-columns: 1fr; gap: 24px; } .tft-card { max-width: 420px; } }

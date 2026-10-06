@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | prepend: site.baseurl }}">
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | prepend: site.baseurl }}">
   <script defer src="{{ '/libs/custom/my_js.js' | prepend: site.baseurl }}"></script>
+  {% if site.data.main_info.tft_riot_id %}<script defer src="{{ '/libs/custom/tft.js' | prepend: site.baseurl }}"></script>{% endif %}
 </head>
 <body>
   <a class="skip-link" href="#about">Skip to content</a>

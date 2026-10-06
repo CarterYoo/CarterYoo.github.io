@@ -1,0 +1,41 @@
+name: Update TFT rank
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tft-rank
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .github/tft
+      - name: Load previous data
+        run: |
+          mkdir -p data
+          curl -fsSL "https://raw.githubusercontent.com/${{ github.repository }}/tft-data/rank.json" -o data/rank.json || rm -f data/rank.json
+      - name: Fetch rank from the Riot API
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+          RIOT_ID: "ActionableInterp#31415"
+          TFT_PLATFORM: na1
+          TFT_REGION: americas
+        run: python3 .github/tft/track.py data/rank.json
+      - name: Publish to the tft-data branch
+        run: |
+          cd data
+          git init -q -b tft-data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add rank.json
+          git commit -q -m "Update TFT rank"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" tft-data
