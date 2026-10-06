@@ -219,7 +219,8 @@ h4 {
   }
 }
 /* Personal adaptation: original Skeleton layout, typography and cyan accents. */
-:root { color-scheme: light; }
+:root { color-scheme: only light; }
+html, body { background: #fff; }
 html { scroll-behavior: smooth; scroll-padding-top: 90px; }
 body { font-family: 'Raleway', 'Noto Sans KR', sans-serif; color: #292d31; }
 * { box-sizing: border-box; }

@@ -42,9 +42,9 @@ profile_alt: "Seunghyun Yoo"
 
 ## 배포
 
-현재 Sites 배포는 비공개 초안용입니다. 정적 빌드는 검색 수집을 제한하는 `robots.txt`의 `Disallow: /`를 생성합니다. 추후 공개할 때 Sites 공개 설정과 `scripts/build.mjs`의 robots 정책을 함께 조정하고 다시 빌드합니다.
+GitHub Pages 사용자 사이트(https://carteryoo.github.io)로 배포합니다. 저장소는 `CarterYoo/CarterYoo.github.io`이고, `main`에 push하면 `.github/workflows/pages.yml`이 `pnpm build`로 `dist/`를 만들어 Pages에 올립니다. `dist/`는 빌드 결과라 저장소에 넣지 않습니다.
 
-프로젝트 루트의 Jekyll 소스도 GitHub Pages에서 사용할 수 있습니다. `username.github.io` 형태의 사용자 사이트라면 `_config.yml`의 `url`을 해당 주소로 바꾸고 `baseurl: ""`을 유지합니다. Sites 주소를 GitHub Pages 주소로 변경할 때 Open Graph 주소도 이 설정을 따릅니다.
+주소를 바꿀 때는 `_config.yml`의 `url`을 수정합니다. Open Graph 주소, `sitemap.xml`, `robots.txt`의 Sitemap 줄이 이 값을 따릅니다.
 
 템플릿 출처와 라이브러리 고지는 [ATTRIBUTION.md](ATTRIBUTION.md)에 기록했습니다.
 

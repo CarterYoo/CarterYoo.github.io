@@ -1,7 +1,7 @@
 title: "Seunghyun Yoo — Personal Website"
 description: "Seunghyun Yoo — Research Fellow at the Supervised Program for Alignment Research and Undergraduate Researcher at GRAIL. AI research, publications, and projects."
 lang: en
-url: "https://personal-academic-homepage-oct5.seunghyunai.chatgpt.site"
+url: "https://carteryoo.github.io"
 baseurl: ""
 updated: "October 2026"
 markdown: kramdown
@@ -19,6 +19,4 @@ exclude:
   - vendor
   - scripts
   - dist
-  - .openai
-  - .sites-runtime
   - motion

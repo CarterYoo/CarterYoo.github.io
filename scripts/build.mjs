@@ -183,7 +183,8 @@ async function build() {
     await cp(path.join(projectRoot, directory), path.join(outputRoot, directory), { recursive: true });
   }
   await writeFile(path.join(outputRoot, 'index.html'), html);
-  await writeFile(path.join(outputRoot, 'robots.txt'), 'User-agent: *\nDisallow: /\n');
+  const sitemapLine = config.url ? `Sitemap: ${String(config.url).replace(/\/$/, '')}${String(config.baseurl || '').replace(/\/$/, '')}/sitemap.xml\n` : '';
+  await writeFile(path.join(outputRoot, 'robots.txt'), `User-agent: *\nAllow: /\n${sitemapLine}`);
   await writeFile(path.join(outputRoot, '.nojekyll'), '');
 
   if (config.url) {
@@ -195,7 +196,7 @@ async function build() {
   }
 
   const checked = await validateReferences(config);
-  console.log(`Built dist/index.html; validated ${checked} internal URLs. Draft robots.txt blocks indexing.`);
+  console.log(`Built dist/index.html; validated ${checked} internal URLs.`);
 }
 
 build().catch((error) => {
