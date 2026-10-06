@@ -14,11 +14,7 @@ layout: default
       <div class="tft-body">
       <p class="tft-queue">Ranked · NA</p>
       <p class="tft-rank"><span class="tft-dot" id="tft-dot"></span><span id="tft-rank">Loading rank…</span></p>
-      <svg class="tft-chart" id="tft-lp" viewBox="0 0 260 84" role="img" aria-label="LP over time"></svg>
-      <div class="tft-sub"><span>Recent placements</span><span id="tft-avg"></span></div>
-      <div class="tft-places" id="tft-places" aria-label="Recent ranked placements, newest last"></div>
-      <p class="tft-meta"><span id="tft-updated">{{ site.data.main_info.tft_riot_id | escape }}</span> · <a href="{{ site.data.main_info.tft_profile_url }}" target="_blank" rel="noopener noreferrer">Full history ↗</a></p>
-      <p class="tft-legal">Data from the Riot Games API. Not endorsed by Riot Games.</p>
+      <p class="tft-games" id="tft-games"></p>
       </div>
     </details>
     {% endif %}
