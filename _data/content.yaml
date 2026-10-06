@@ -2,10 +2,7 @@ about:
   - "I'm a Research Fellow at the Supervised Program for Alignment Research and an Undergraduate Researcher at the Governance and Responsible AI Lab (GRAIL). I'm pursuing a B.S. in Artificial Intelligence with a minor in Mathematics at Purdue University."
   - "My research spans mechanistic interpretability, diffusion language models, AI safety, and technical AI governance. Recent work examines policy auditing with internal model evidence, SAE feature evolution during denoising, and behaviour in multi-agent systems."
 interests:
-  - "Mechanistic interpretability"
-  - "Diffusion language models"
-  - "AI safety"
-  - "Technical AI governance"
+  - "Technical AI Safety"
 news: []
 education:
   - school: "Purdue University"
