@@ -362,11 +362,17 @@ html { scroll-padding-top: 0; }
 /* About + live TFT rank card */
 .about-grid { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 36px; align-items: start; }
 .about-text { min-width: 0; }
-.tft-card { border: 1px solid #e3e8ec; border-radius: 6px; padding: 16px 16px 12px; background: #fbfcfd; font-size: 1.2rem; line-height: 1.5; }
-.tft-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
-.tft-card h3 { font-size: 1.35rem; font-weight: 600; margin: 0; letter-spacing: .02rem; }
-.tft-queue { color: #8b9197; font-size: 10px; letter-spacing: .08rem; text-transform: uppercase; white-space: nowrap; }
-.tft-card .tft-rank { display: flex; align-items: center; gap: 8px; margin: 10px 0 6px; font-size: 1.6rem; font-weight: 600; color: #25292d; }
+.tft-card { border: 1px solid #e3e8ec; border-radius: 6px; background: #fbfcfd; font-size: 1.2rem; line-height: 1.5; }
+.tft-summary { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 11px 16px; cursor: pointer; list-style: none; font-size: 1.3rem; font-weight: 600; color: #25292d; user-select: none; }
+.tft-summary::-webkit-details-marker { display: none; }
+.tft-summary:hover { color: #1683a5; }
+.tft-summary:focus-visible { outline: 2px solid #33c3f0; outline-offset: 2px; border-radius: 6px; }
+.tft-fun { color: #8b9197; font-weight: 400; }
+.tft-chevron { color: #8b9197; transition: transform .2s ease; }
+.tft-card[open] .tft-chevron { transform: rotate(180deg); }
+.tft-body { padding: 0 16px 12px; }
+.tft-card .tft-queue { color: #8b9197; font-size: 10px; letter-spacing: .08rem; text-transform: uppercase; margin: 0; }
+.tft-card .tft-rank { display: flex; align-items: center; gap: 8px; margin: 6px 0 6px; font-size: 1.6rem; font-weight: 600; color: #25292d; }
 .tft-dot { width: 10px; height: 10px; border-radius: 50%; background: #c9cdd1; flex: none; }
 .tft-chart { display: block; width: 100%; height: auto; margin: 2px 0 8px; }
 .tft-chart text { font: 9px 'Raleway', sans-serif; fill: #8b9197; }

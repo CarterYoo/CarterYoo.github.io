@@ -1,4 +1,4 @@
-/* "Track my TFT rank" card: reads rank.json written every 30 min by .github/workflows/tft-rank.yml. */
+/* "Track my TFT rank" card: on first open, reads rank.json written every 30 min by .github/workflows/tft-rank.yml. */
 (() => {
   const card = document.getElementById('tft');
   if (!card) return;
@@ -77,7 +77,10 @@
     $('tft-avg').textContent = `avg ${avg.toFixed(1)} · top 4 ${Math.round(top4 * 100)}%`;
   }
 
-  fetch(`${card.dataset.src}?t=${Date.now()}`, { cache: 'no-store' })
+  let loaded = false;
+  card.addEventListener('toggle', () => { if (card.open && !loaded) { loaded = true; load(); } });
+
+  const load = () => fetch(`${card.dataset.src}?t=${Date.now()}`, { cache: 'no-store' })
     .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
     .then((data) => {
       if (!data.updated) {
