@@ -7,16 +7,10 @@ updated: "October 2026"
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
+plugins:
+  - jekyll-sitemap
 exclude:
   - README.md
-  - ATTRIBUTION.md
   - Gemfile
   - Gemfile.lock
-  - package.json
-  - package-lock.json
-  - pnpm-lock.yaml
-  - node_modules
   - vendor
-  - scripts
-  - dist
-  - motion
