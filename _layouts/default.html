@@ -19,10 +19,10 @@
   <link rel="stylesheet" href="{{ '/libs/external/font-awesome-4.7.0/css/font-awesome.min.css' | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ '/libs/external/academicons-1.8.6/css/academicons.min.css' | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ '/libs/external/timeline.css' | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ '/libs/custom/my_css.css' | prepend: site.baseurl }}?v={{ site.github.build_revision }}">
   <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | prepend: site.baseurl }}">
-  <script defer src="{{ '/libs/custom/my_js.js' | prepend: site.baseurl }}"></script>
-  {% if site.data.main_info.tft_riot_id %}<script defer src="{{ '/libs/custom/tft.js' | prepend: site.baseurl }}"></script>{% endif %}
+  <script defer src="{{ '/libs/custom/my_js.js' | prepend: site.baseurl }}?v={{ site.github.build_revision }}"></script>
+  {% if site.data.main_info.tft_riot_id %}<script defer src="{{ '/libs/custom/tft.js' | prepend: site.baseurl }}?v={{ site.github.build_revision }}"></script>{% endif %}
 </head>
 <body>
   <a class="skip-link" href="#about">Skip to content</a>

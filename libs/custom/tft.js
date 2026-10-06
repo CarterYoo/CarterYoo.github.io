@@ -79,6 +79,8 @@
 
   let loaded = false;
   card.addEventListener('toggle', () => { if (card.open && !loaded) { loaded = true; load(); } });
+  // an always-open card (no <details>) loads right away
+  if (card.tagName !== 'DETAILS') setTimeout(() => { loaded = true; load(); });
 
   const load = () => fetch(`${card.dataset.src}?t=${Date.now()}`, { cache: 'no-store' })
     .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
