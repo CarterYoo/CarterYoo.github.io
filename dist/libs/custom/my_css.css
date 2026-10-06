@@ -338,15 +338,22 @@ html { scroll-padding-top: 0; }
 .timeline .time { color: #7b8288; background: transparent; padding: 0; }
 
 /* Project figures retain their full aspect ratio and open at source resolution. */
-.project-row { display: grid; grid-template-columns: 252px minmax(0, 1fr); gap: 28px; align-items: start; margin-bottom: 36px; }
+.project-row { display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 28px; align-items: start; margin-bottom: 36px; }
 .project-figure { margin: 0; min-width: 0; }
 .project-image-link { display: flex; align-items: center; justify-content: center; min-height: 180px; border: 1px solid #e6ecef; border-radius: 6px; overflow: hidden; background: #f5f8fa; }
-.project-thumbnail { display: block; width: 100%; max-height: 240px; height: auto; margin: 0; object-fit: contain; border-radius: 0; }
+.project-thumbnail { display: block; width: 100%; max-height: none; height: auto; margin: 0; object-fit: contain; border-radius: 0; }
 .project-figure figcaption { color: #8b9298; font-size: 10px; line-height: 1.5; margin-top: 8px; }
 .project-context { color: #8b9298; font-size: 1.1rem; margin-bottom: 5px; line-height: 1.5; }
 .project-details h3 { font-size: 1.75rem; line-height: 1.45; margin-bottom: 9px; }
 .project-details p { font-size: 1.35rem; line-height: 1.8; }
 .project-details .project-context { font-size: 1.1rem; line-height: 1.5; }
 .project-row:last-child { margin-bottom: 0; }
-@media (max-width: 749px) { .project-row { grid-template-columns: 180px minmax(0,1fr); gap: 22px; } .project-image-link { min-height: 130px; } .project-thumbnail { max-height: 185px; } }
+@media (max-width: 749px) { .project-row { grid-template-columns: 240px minmax(0,1fr); gap: 22px; } .project-image-link { min-height: 130px; } .project-thumbnail { max-height: 185px; } }
 @media (max-width: 549px) { .project-row { grid-template-columns: 1fr; gap: 17px; margin-bottom: 38px; } .project-thumbnail { max-height: 300px; } .project-image-link { min-height: 160px; } }
+
+/* Paper and project figures are looping architecture animations (960×600). */
+.paper-row { margin-bottom: 36px; }
+.paper-details { min-width: 0; }
+.paper-row .project-image-link { min-height: 0; aspect-ratio: 8 / 5; background: #fff; }
+.project-row .project-image-link { min-height: 0; background: #fff; }
+.image-slot { aspect-ratio: 8 / 5; border-style: dashed; background: #fff; }

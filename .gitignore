@@ -4,3 +4,6 @@ _site/*
 node_modules/
 .sites-runtime/
 .sites-checkout*/
+motion/*/snapshots/
+motion/*/renders/
+motion/*/.hyperframes/

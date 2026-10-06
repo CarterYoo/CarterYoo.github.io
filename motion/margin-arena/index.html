@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=960, height=600" />
+    <title>Margin Arena — architecture loop</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/MotionPathPlugin.min.js"></script>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --ink: #1d1f21;
+        --mid: #5d6267;
+        --line: #a3a8ad;
+        --faint: #eceef0;
+        --fill: #f1f3f5;
+        --stream: #e7ecf1;
+        --attn: #e5edf5;
+        --mlp: #f2eee7;
+        --sq: #c9cdd1;
+        --accent: #2f5d86;
+        --accent-soft: #d6e2ee;
+        --alert: #9b3a2c;
+        --alert-soft: #f1dfdb;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 960px; height: 600px; overflow: hidden; background: var(--bg); }
+      #root { position: relative; width: 100%; height: 100%; background: var(--bg); }
+      #stage { position: absolute; inset: 0; }
+      svg { display: block; width: 100%; height: 100%; }
+      .t { font: 400 12.5px/1 "Helvetica Neue", Helvetica, Arial, sans-serif; fill: var(--mid); }
+      .t-s { font-size: 11px; }
+      .t-ink { fill: var(--ink); }
+      .m { font: italic 16px/1 "Times New Roman", Times, serif; fill: var(--ink); }
+      .m-s { font-size: 13.5px; }
+      .wire { fill: none; stroke: var(--line); stroke-width: 1.1; stroke-linejoin: round; }
+      .dash { stroke-dasharray: 3 3; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="7" data-width="960" data-height="600">
+      <div id="stage" class="clip" data-start="0" data-duration="7" data-track-index="0">
+        <svg id="svg" viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg">
+          <g id="scene" transform="translate(0,22)"></g>
+          <g id="pulses" transform="translate(0,22)"></g>
+        </svg>
+      </div>
+    </div>
+    <script src="diagram.js"></script>
+    <script>
+      gsap.registerPlugin(MotionPathPlugin);
+      const tl = gsap.timeline(); // content timeline, nested and slowed under `main`
+      const { C, el, g, text, math, wire, plus, block, vec, sae } = D;
+      const A = D.anim(tl);
+      const S = document.getElementById("scene");
+      const fp = (d) => el("path", { d, fill: "none", stroke: "none" }, S);
+
+      // ── Inputs ──
+      const gIn = g(S, "inputs");
+      el("rect", { x: 26, y: 150, width: 96, height: 26, rx: 2, fill: "#fff", stroke: C.ink, "stroke-width": 1.1 }, gIn);
+      text(gIn, 74, 167, "open model", { cls: "t t-s t-ink", anchor: "middle" });
+      el("rect", { x: 26, y: 432, width: 96, height: 26, rx: 2, fill: "#fff", stroke: C.ink, "stroke-width": 1.1 }, gIn);
+      text(gIn, 74, 449, "external task", { cls: "t t-s t-ink", anchor: "middle" });
+      const wModel = wire(S, "M122,163 H140 V296 H186", { arrow: true });
+      const wTask = wire(S, "M122,445 H196", { arrow: true });
+
+      // ── Arena ──
+      const arena = el("rect", { x: 150, y: 92, width: 500, height: 400, rx: 3, fill: "none", stroke: C.ink, "stroke-width": 1.2 }, S);
+      const arenaLbl = text(S, 164, 112, "arena", { cls: "t t-s t-ink" });
+      const stopLbl = text(S, 636, 112, "token budget exhausted · trial ends", { cls: "t t-s", anchor: "end", style: "fill: var(--alert)" });
+
+      // agent LLM: residual stream with attention / MLP blocks
+      const SX = 262, SB = 404, ST = 182;
+      const gLM = g(S, "lm");
+      const band = el("rect", { x: SX - 7, y: ST, width: 14, height: SB - ST, fill: C.stream }, gLM);
+      const WE = block(gLM, SX - 32, SB, 64, 22, { math: [["W"], ["E", "sub"]] });
+      const WU = block(gLM, SX - 32, ST - 22, 64, 22, { math: [["W"], ["U", "sub"]] });
+      const LB = [{ c: 376, kind: "attn" }, { c: 344, kind: "mlp" }, { c: 268, kind: "attn" }, { c: 236, kind: "mlp" }];
+      LB.forEach((b) => {
+        b.blk = block(gLM, SX + 22, b.c - 12, 46, 24, { kind: b.kind, grid: 4 });
+        b.r = wire(gLM, `M${SX + 7},${b.c + 6} H${SX + 21}`, { arrow: true });
+        b.w = wire(gLM, `M${SX + 22},${b.c - 6} H${SX + 7}`, {});
+        b.p = plus(gLM, SX, b.c - 6, 5.5);
+      });
+      text(gLM, SX - 16, 314, "⋮", { cls: "t", anchor: "middle" });
+      text(gLM, SX - 16, 210, "⋮", { cls: "t", anchor: "middle" });
+      text(gLM, SX - 40, 300, "agent", { cls: "t t-s t-ink", anchor: "end" });
+
+      // token tapes: context (bottom) and generated (top)
+      const gCtx = g(S, "ctx");
+      const ctxCells = [];
+      const cell = (parent, x, y, fill) => el("rect", { x, y, width: 14, height: 16, fill, stroke: C.line, "stroke-width": 0.7 }, parent);
+      for (let i = 0; i < 7; i++) ctxCells.push(cell(gCtx, 200 + i * 17, 438, C.sq));
+      const ctxLbl = text(gCtx, 200, 474, "context", { cls: "t t-s" });
+      const wCtx = wire(S, `M${SX},437 V${SB + 23}`, { arrow: true });
+      const gGen = g(S, "gen");
+      const genLbl = text(gGen, 200, 124, "generated tokens", { cls: "t t-s" });
+      const genCells = Array.from({ length: 12 }, (_, i) => cell(gGen, 200 + i * 17, 132, i === 3 || i === 9 ? C.accent : i === 7 ? "#8fa9c2" : "#7a838b"));
+      const wGen = wire(S, `M${SX},${ST - 22} V149`, { arrow: true });
+
+      // activation hooks → cache (captured during initial prompt processing)
+      const hooks = [318, 210].map((y) => {
+        const d = el("circle", { cx: SX, cy: y, r: 3, fill: C.accent }, S);
+        const w = wire(S, `M${SX + 7},${y} H${y === 318 ? 384 : 384}`, { arrow: true, color: C.accent });
+        return { d, w };
+      });
+      const gCache = g(S, "cache");
+      const cache = vec(gCache, 386, 200, 10, { cell: 11, gap: 2, fill: "#fff" });
+      text(gCache, 392, 190, "activations", { cls: "t t-s", anchor: "middle" });
+
+      // tools: sandbox and verifier
+      const gTools = g(S, "tools");
+      const sandbox = el("rect", { x: 476, y: 290, width: 120, height: 44, rx: 2, fill: "#fff", stroke: C.ink, "stroke-width": 1.1 }, gTools);
+      text(gTools, 536, 316, "sandbox", { cls: "t t-s t-ink", anchor: "middle" });
+      const verify = el("rect", { x: 560, y: 224, width: 70, height: 24, rx: 2, fill: "#fff", stroke: C.ink, "stroke-width": 1.1 }, gTools);
+      text(gTools, 595, 240, "verifier", { cls: "t t-s t-ink", anchor: "middle" });
+      const wCall = wire(S, "M408,140 H520 V289", { arrow: true });
+      const wVer = wire(S, "M520,160 H595 V223", { arrow: true });
+      const wRes = wire(S, "M476,322 H424 V437", { arrow: true });
+      const callLbl = text(S, 528, 196, "tool call", { cls: "t t-s" });
+      const resLbl = text(S, 418, 380, "result", { cls: "t t-s", anchor: "end" });
+
+      // five resource limits
+      const gMeter = g(S, "meters");
+      const names = ["tokens", "time", "verification", "tool calls", "sessions"];
+      const meterLbls = [];
+      const meters = names.map((n, i) => {
+        const y = 384 + i * 20;
+        meterLbls.push(text(gMeter, 548, y + 4, n, { cls: "t t-s", anchor: "end" }));
+        el("rect", { x: 556, y: y - 3, width: 80, height: 6, fill: C.faint }, gMeter);
+        return el("rect", { x: 556, y: y - 3, width: 80, height: 6, fill: C.ink }, gMeter);
+      });
+      text(gMeter, 556, 366, "budget", { cls: "t t-s" });
+
+      // ── Saved record → interpretation ──
+      const gRec = g(S, "rec");
+      text(gRec, 680, 140, "saved record", { cls: "t t-s t-ink" });
+      const recNames = ["prompts, token IDs", "tool calls, results", "task score", "activations"];
+      const recRows = recNames.map((n, i) => {
+        const r = g(gRec, "row");
+        el("rect", { x: 680, y: 150 + i * 34, width: 140, height: 26, rx: 2, fill: C.fill }, r);
+        text(r, 690, 167 + i * 34, n, { cls: "t t-s t-ink" });
+        return r;
+      });
+      const wRec = wire(S, "M404,265 H664", { arrow: true, color: C.accent });
+      const wInt = wire(S, "M750,278 V330 H838", { arrow: true });
+      const sa = sae(S, 840, 362, { nIn: 5, nLat: 12, cIn: 9, cLat: 5, latW: 10, span: 22, weights: false });
+      const intLbl = text(S, 880, 446, "SAE / probes", { cls: "t t-s t-ink", anchor: "middle" });
+
+      // ── Timeline ──
+      A.fade(gIn, 0.1);
+      A.draw([wModel, wTask], 0.25, 0.25);
+      A.draw(arena, 0.3, 0.6, "power2.inOut");
+      A.fade(arenaLbl, 0.5);
+      A.fade([WE, WU], 0.45);
+      A.grow(band, 0.45, { origin: "50% 100%", dur: 0.45 });
+      LB.forEach((b, i) => {
+        A.fade([b.blk, b.p], 0.55 + i * 0.06, { dur: 0.3 });
+        A.draw([b.r, b.w], 0.6 + i * 0.06, 0.15);
+      });
+      A.fade(gLM.querySelectorAll("text.t"), 0.7);
+      A.fade(gCtx, 0.5, { y: 3 });
+      A.draw([wCtx, wGen], 0.7, 0.15);
+      A.fade(genLbl, 0.75);
+      A.fade(gCache, 0.8);
+      A.fade(gTools, 0.85);
+      A.draw([wCall, wRes], 0.9, 0.35);
+      A.draw(wVer, 0.95, 0.3);
+      A.fade([callLbl, resLbl], 1.0);
+      A.fade(gMeter, 0.85);
+      tl.fromTo(meters, { scaleX: 0, transformOrigin: "0% 50%" }, { scaleX: 1, duration: 0.4, stagger: 0.04, ease: "power2.out" }, 0.9);
+      A.fade(gRec.querySelector("text"), 0.95);
+      A.fade(recRows.map((r) => r.querySelector("rect")), 0.95, { stagger: 0.03 });
+
+      // initial prompt processing: hooks fill the activation cache
+      A.pulse(fp(`M${SX},437 V160`), 1.05, 0.35, { color: C.ink, r: 3, ease: "none" });
+      hooks.forEach((h, i) => {
+        A.fade(h.d, 1.1 + i * 0.1, { dur: 0.15 });
+        A.draw(h.w, 1.12 + i * 0.12, 0.2);
+        A.pulse(h.w, 1.12 + i * 0.12, 0.2, { color: C.accent, r: 2.5 });
+      });
+      tl.fromTo(cache, { fill: "#ffffff" }, { fill: (i) => [C.accent, "#8fa9c2", "#c3d2e0", C.accent, "#dbe4ec", "#8fa9c2", "#c3d2e0", C.accent, "#dbe4ec", "#8fa9c2"][i], duration: 0.15, stagger: 0.025, immediateRender: false }, 1.4);
+
+      // generation loop under limits: 12 tokens, two tool calls, one verification
+      const G0 = 1.5, DG = 0.14;
+      tl.fromTo(meters[1], { scaleX: 1 }, { scaleX: 0.35, duration: 12 * DG + 0.3, ease: "none", immediateRender: false }, G0);
+      let ctxN = 7;
+      for (let i = 0; i < 12; i++) {
+        let t = G0 + i * DG + (i >= 4 ? 0.3 : 0) + (i >= 8 ? 0.0 : 0);
+        A.pulse(fp(`M${SX},437 V150`), t, DG * 0.9, { color: C.ink, r: 2.6, ease: "none" });
+        LB.forEach((b) => A.flash(b.blk._rect, t + ((437 - b.c) / 287) * DG * 0.9, b.kind === "attn" ? C.attn : C.mlp, b.kind === "attn" ? C["accent-soft"] : "#e4dccd", 0.04));
+        tl.fromTo(genCells[i], { opacity: 0 }, { opacity: 1, duration: 0.05 }, t + DG * 0.9);
+        tl.to(meters[0], { scaleX: 1 - (i + 1) / 12, duration: 0.08, ease: "none" }, t + DG * 0.9);
+        if (i === 3 || i === 9) {
+          const tc = t + DG;
+          A.pulse(wCall, tc, 0.16, { color: C.ink, r: 2.8 });
+          A.flash(sandbox, tc + 0.15, "#ffffff", C.fill, 0.06);
+          A.pulse(wRes, tc + 0.2, 0.12, { color: C.ink, r: 2.8 });
+          tl.to(meters[3], { scaleX: i === 3 ? 0.9 : 0.8, duration: 0.1 }, tc + 0.1);
+          for (let k = 0; k < 2; k++) {
+            const c = cell(gCtx, 200 + ctxN * 17, 438, "#7a838b");
+            tl.fromTo(c, { opacity: 0 }, { opacity: 1, duration: 0.06 }, tc + 0.32 + k * 0.03);
+            ctxN++;
+          }
+        }
+        if (i === 7) {
+          A.pulse(wVer, t + DG, 0.15, { color: C.accent, r: 2.8 });
+          tl.to(verify, { stroke: C.accent, duration: 0.1 }, t + DG + 0.14);
+          tl.to(meters[2], { scaleX: 0.67, duration: 0.1 }, t + DG + 0.14);
+        }
+      }
+      // budget exhausted
+      const tStop = G0 + 12 * DG + 0.3 + 0.05;
+      tl.to(arena, { stroke: C.alert, duration: 0.2 }, tStop);
+      tl.to(meterLbls[0], { fill: C.alert, duration: 0.2 }, tStop);
+      A.fade(stopLbl, tStop, { dur: 0.25 });
+
+      // record → interpretation
+      A.draw(wRec, tStop + 0.1, 0.3);
+      A.pulse(wRec, tStop + 0.1, 0.3, { color: C.accent, r: 2.8 });
+      recRows.forEach((r, i) => A.fade(r.querySelector("text"), tStop + 0.2 + i * 0.06, { dur: 0.2 }));
+      tl.to(recRows[3].querySelector("rect"), { fill: C["accent-soft"], duration: 0.2 }, tStop + 0.35);
+      A.draw(wInt, tStop + 0.45, 0.25);
+      A.fade([sa.g, intLbl], tStop + 0.6);
+      [2, 7, 9].forEach((k, j) => tl.fromTo(sa.fs[k], { fill: "#ffffff" }, { fill: C.accent, duration: 0.15, immediateRender: false }, tStop + 0.8 + j * 0.05));
+
+      // 7 s loop: content plays at 0.8× speed, holds on the result, then fades for a clean restart.
+      const main = gsap.timeline({ paused: true });
+      tl.timeScale(0.8);
+      main.add(tl, 0);
+      main.to(["#scene", "#pulses"], { opacity: 0, duration: 0.42, ease: "power2.in" }, 6.55);
+      window.__timelines["main"] = main;
+      main.seek(0);
+    </script>
+  </body>
+</html>

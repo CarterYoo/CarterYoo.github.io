@@ -7,42 +7,37 @@
     "source_frame": 920,
     "source_timestamp_seconds": 32.3,
     "size": [
-      960,
-      540
+      640,
+      360
     ],
-    "transformation": "Static frame extracted from original repository animated WebP and encoded as WebP. No performance values changed.",
+    "transformation": "7 s clip from the demo video (about 24-34 s of demo.mp4, played at 1.6x), rendered with HyperFrames and encoded as a 640x360, 15 fps GIF. No performance values changed.",
     "license": "No LICENSE file in repository. Reuse requested by repository owner for their personal website.",
     "description": "Ethogram turns multi-agent logs into an evidence-linked behaviour catalogue and interactive atlas, tracking how behaviours change and spread across AI agents.",
     "alt": "Ethogram behaviour atlas showing clusters, influence links, and a timeline of changes in AI agent behaviour.",
     "caption": "Behaviour atlas and timeline from the Ethogram project demo.",
-    "event": "AI Village × Grove Research AI Swarm Dynamics Hackathon, October 3–4, 2026"
+    "event": "AI Village × Grove Research AI Swarm Dynamics Hackathon, October 3–4, 2026",
+    "site_asset": "ethogram-demo.gif"
   },
   {
     "project": "Margin Arena",
     "repository": "https://github.com/CarterYoo/margin-arena",
     "readme": "https://github.com/CarterYoo/margin-arena/blob/main/README.md",
     "description": "A reproducible Python environment for studying AI agents under token, time, verification, tool-call, and session limits, with external tasks and inspectable model records.",
-    "image": "site-figure.webp",
-    "original_image": "https://github.com/CarterYoo/margin-arena/blob/main/docs/assets/margin-banner-compact.png",
-    "image_alt": "Margin Arena graphic showing the five resource limits: tokens, time, verification, tool calls, and sessions.",
-    "image_caption": "Five measurable resource limits for agent research.",
-    "image_dimensions": [
-      840,
-      870
-    ],
     "source_license": "MIT",
-    "figure_conversion": "Original repository PNG converted to WebP. No new empirical chart or benchmark results added.",
-    "uncertainty": "Current beta tooling supports detection, analysis, and understanding; the README explicitly says it does not yet establish that resource limits cause reward hacking."
+    "uncertainty": "Current beta tooling supports detection, analysis, and understanding; the README explicitly says it does not yet establish that resource limits cause reward hacking.",
+    "site_asset": "margin-arena.gif",
+    "figure_type": "Architecture animation made with HyperFrames (motion/margin-arena); no empirical results shown."
   },
   {
     "repository": "https://github.com/CarterYoo/DLM-Control",
     "commit": "47cac921ab66b01af99879c1159be227ffc5a056",
     "source": "README.md / Current headline numbers / Main attack benchmark",
-    "figure_type": "new visualization of reported results",
+    "figure_type": "Architecture animation made with HyperFrames (motion/dlm-control); detection steps 9.6 and 63 taken from the README's main benchmark.",
     "mean_detection_step": {
       "trajectory_sae_monitor": 9.604,
       "output_only_monitor": 63.0
     },
-    "display_precision": 2
+    "display_precision": 2,
+    "site_asset": "dlm-control.gif"
   }
 ]

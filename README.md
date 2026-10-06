@@ -19,7 +19,7 @@ python3 -m http.server 8917 --directory dist
 | 파일 | 주요 내용과 필드 |
 | --- | --- |
 | `_data/main_info.yaml` | `name`, `title`, `subtitle`, `email`, `secondary_email`, `profile_pic`, `profile_alt`, `cv`, `github`, `linkedin`, `google_scholar`, `twitter` |
-| `_data/content.yaml` | `about`와 `interests`는 문자열 목록. `news`: `date`, `text`, `url`. `education`: `school`, `time`, `degree`, `description`. `service`: `title`, `time`, `role`, `description`, `url` |
+| `_data/content.yaml` | `about`와 `interests`는 문자열 목록. `news`: `date`, `text`, `url`. `education`: `school`, `time`, `degree`, `description`. `teaching`: `title`, `time`, `role`, `description`, `image`, `image_alt`, `url` (`image`가 비어 있으면 그림 자리만 빈칸으로 표시) |
 | `_data/publications.yaml` | `papers` 목록: `title`, `authors`, `venue`, `paper_pdf`, `code`, `dataset`, `huggingface`, `selected`, `type` |
 | `_data/projects.yaml` | `projects` 목록: `title`, `subtitle`, `context`, `technologies`, `url`, `thumbnail`, `image_alt`, `image_caption`, `image_width`, `image_height`, `selected` |
 | `_data/experience.yaml` | `experiences` 목록: `place`, `time`, `title`, `subtitle`, `description`, `url`, `category` |
@@ -48,4 +48,24 @@ profile_alt: "Seunghyun Yoo"
 
 템플릿 출처와 라이브러리 고지는 [ATTRIBUTION.md](ATTRIBUTION.md)에 기록했습니다.
 
-Projects는 Ethogram, Margin Arena, DLM-Control 세 개입니다. 수업 프로젝트와 LLMs as Deceptive Agents 프리프린트는 사용자 요청에 따라 제외했습니다. 프로젝트 WebP와 출처는 `assets/projects/`에 있으며 이미지를 클릭하면 원본 크기로 열립니다.
+Projects는 Ethogram, Margin Arena, DLM-Control 세 개입니다. 수업 프로젝트와 LLMs as Deceptive Agents 프리프린트는 사용자 요청에 따라 제외했습니다. 프로젝트 GIF와 출처는 `assets/projects/`에 있으며 이미지를 클릭하면 원본 크기로 열립니다.
+
+## 논문·프로젝트 아키텍처 GIF
+
+Publications와 Projects의 그림은 [HyperFrames](https://github.com/heygen-com/hyperframes)로 만든 7초 루프 GIF(960×600, 24fps)입니다. 원본 컴포지션은 `motion/<이름>/index.html`에 있고, 결과물은 `assets/papers/`와 `assets/projects/`에 복사되어 있습니다. 수정 후 다시 만들 때는 다음을 실행합니다(Node.js와 FFmpeg 필요).
+
+```sh
+cd motion/white-box-audit
+npx hyperframes check .
+npx hyperframes render . --format gif --fps 24 -o ../../assets/papers/white-box-audit.gif
+```
+
+| 컴포지션 | 출력 |
+| --- | --- |
+| `motion/white-box-audit` | `assets/papers/white-box-audit.gif` |
+| `motion/feature-evolution` | `assets/papers/feature-evolution.gif` |
+| `motion/ethogram-demo` | `assets/projects/ethogram-demo.gif` (데모 영상 24–34초 구간, 1.6배속; 렌더한 MP4를 15fps·640px GIF로 재인코딩) |
+| `motion/margin-arena` | `assets/projects/margin-arena.gif` |
+| `motion/dlm-control` | `assets/projects/dlm-control.gif` |
+
+논문 그림은 `_data/publications.yaml`의 `figure`, `figure_alt`, `figure_caption` 필드로 지정합니다.

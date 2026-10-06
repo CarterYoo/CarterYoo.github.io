@@ -31,8 +31,9 @@ Seunghyun Yoo의 프로필·연락처는 사용자가 직접 제공한 정보이
 
 ## 프로젝트 이미지
 
-- Ethogram: [저장소 데모 WebP](https://github.com/CarterYoo/ethogram/blob/main/docs/media/ethogram-demo.webp)의 정적 프레임.
-- Margin Arena: [저장소 compact banner](https://github.com/CarterYoo/margin-arena/blob/main/docs/assets/margin-banner-compact.png)를 WebP로 변환.
-- DLM-Control: [README의 main attack benchmark](https://github.com/CarterYoo/DLM-Control#current-headline-numbers)에 보고된 평균 탐지 시점 9.604와 63.000을 바 차트로 시각화. 화면에는 소수점 두 자리로 표시합니다.
+- Ethogram: 사용자가 제공한 프로젝트 데모 영상(`demo.mp4`)의 약 24–34초 구간을 1.6배속으로 잘라 만든 GIF.
+- Margin Arena: 저장소 README의 구조를 바탕으로 HyperFrames로 새로 그린 아키텍처 애니메이션.
+- DLM-Control: HyperFrames로 새로 그린 아키텍처 애니메이션. [README의 main attack benchmark](https://github.com/CarterYoo/DLM-Control#current-headline-numbers)에 보고된 평균 탐지 시점 9.604와 63.000을 9.6과 63으로 표시합니다.
+- 논문 그림 두 개(`assets/papers/`)도 각 논문 내용을 바탕으로 HyperFrames로 새로 그린 아키텍처 애니메이션입니다.
 
-세 이미지는 사용자가 요청한 본인 프로젝트 소개용으로 구성했습니다. 원본 경로와 기준 커밋, 변환 정보는 `assets/projects/sources.json`에 기록했습니다.
+세 프로젝트 이미지는 사용자가 요청한 본인 프로젝트 소개용으로 구성했습니다. 원본 경로와 기준 커밋, 변환 정보는 `assets/projects/sources.json`에 기록했습니다.

@@ -1,5 +1,5 @@
 title: "Seunghyun Yoo — Personal Website"
-description: "Seunghyun Yoo — Research Fellow at SPAR and Undergraduate Researcher at GRAIL. AI research, publications, and projects."
+description: "Seunghyun Yoo — Research Fellow at the Supervised Program for Alignment Research and Undergraduate Researcher at GRAIL. AI research, publications, and projects."
 lang: en
 url: "https://personal-academic-homepage-oct5.seunghyunai.chatgpt.site"
 baseurl: ""
@@ -21,3 +21,4 @@ exclude:
   - dist
   - .openai
   - .sites-runtime
+  - motion
