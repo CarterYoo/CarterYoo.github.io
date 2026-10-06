@@ -15,7 +15,7 @@ experiences:
     category: "work"
   - place: "Algoverse AI Safety Fellowship"
     time: "Feb. 2026 - Jun. 2026"
-    title: "Researcher"
+    title: "Research Fellow"
     subtitle: "Supervisor: Justice Sefas · Remote"
     description: "Analyzed SAE features in Dream-v0-Base-7B across six layers and 64 denoising steps, including feature interpretation and token commitment visualizations. The resulting study was accepted to the COLM 2026 Non-Autoregressive Language Models Workshop."
     url: "https://openreview.net/forum?id=3LYTk2idOP"
