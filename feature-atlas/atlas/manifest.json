@@ -1,0 +1,1389 @@
+{
+  "schema_version": 1,
+  "time_bins": 16,
+  "steps": 64,
+  "states": [
+    "mask",
+    "unmask"
+  ],
+  "models": {
+    "llada": {
+      "count": 196608,
+      "files": {
+        "positions": "llada.positions.bin",
+        "mean": "llada.mean.bin",
+        "rate": "llada.rate.bin",
+        "peaks": "llada.peaks.bin",
+        "observed": "llada.observed.bin"
+      },
+      "dictionaries": [
+        {
+          "layer": 1,
+          "dictionary": "mask",
+          "k": 80,
+          "start": 0,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              32000,
+              29952,
+              27904,
+              25856,
+              23808,
+              21760,
+              19712,
+              17664,
+              15616,
+              13568,
+              11520,
+              9472,
+              7424,
+              5376,
+              3328,
+              1280
+            ],
+            [
+              768,
+              2816,
+              4864,
+              6912,
+              8960,
+              11008,
+              13056,
+              15104,
+              17152,
+              19200,
+              21248,
+              23296,
+              25344,
+              27392,
+              29440,
+              39680
+            ]
+          ]
+        },
+        {
+          "layer": 1,
+          "dictionary": "unmask",
+          "k": 80,
+          "start": 16384,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              32000,
+              29952,
+              27904,
+              25856,
+              23808,
+              21760,
+              19712,
+              17664,
+              15616,
+              13568,
+              11520,
+              9472,
+              7424,
+              5376,
+              3328,
+              1280
+            ],
+            [
+              768,
+              2816,
+              4864,
+              6912,
+              8960,
+              11008,
+              13056,
+              15104,
+              17152,
+              19200,
+              21248,
+              23296,
+              25344,
+              27392,
+              29440,
+              39680
+            ]
+          ]
+        },
+        {
+          "layer": 6,
+          "dictionary": "mask",
+          "k": 80,
+          "start": 32768,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              32000,
+              29952,
+              27904,
+              25856,
+              23808,
+              21760,
+              19712,
+              17664,
+              15616,
+              13568,
+              11520,
+              9472,
+              7424,
+              5376,
+              3328,
+              1280
+            ],
+            [
+              768,
+              2816,
+              4864,
+              6912,
+              8960,
+              11008,
+              13056,
+              15104,
+              17152,
+              19200,
+              21248,
+              23296,
+              25344,
+              27392,
+              29440,
+              39680
+            ]
+          ]
+        },
+        {
+          "layer": 6,
+          "dictionary": "unmask",
+          "k": 80,
+          "start": 49152,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              32000,
+              29952,
+              27904,
+              25856,
+              23808,
+              21760,
+              19712,
+              17664,
+              15616,
+              13568,
+              11520,
+              9472,
+              7424,
+              5376,
+              3328,
+              1280
+            ],
+            [
+              768,
+              2816,
+              4864,
+              6912,
+              8960,
+              11008,
+              13056,
+              15104,
+              17152,
+              19200,
+              21248,
+              23296,
+              25344,
+              27392,
+              29440,
+              39680
+            ]
+          ]
+        },
+        {
+          "layer": 11,
+          "dictionary": "mask",
+          "k": 80,
+          "start": 65536,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              32000,
+              29952,
+              27904,
+              25856,
+              23808,
+              21760,
+              19712,
+              17664,
+              15616,
+              13568,
+              11520,
+              9472,
+              7424,
+              5376,
+              3328,
+              1280
+            ],
+            [
+              768,
+              2816,
+              4864,
+              6912,
+              8960,
+              11008,
+              13056,
+              15104,
+              17152,
+              19200,
+              21248,
+              23296,
+              25344,
+              27392,
+              29440,
+              39680
+            ]
+          ]
+        },
+        {
+          "layer": 11,
+          "dictionary": "unmask",
+          "k": 80,
+          "start": 81920,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              32000,
+              29952,
+              27904,
+              25856,
+              23808,
+              21760,
+              19712,
+              17664,
+              15616,
+              13568,
+              11520,
+              9472,
+              7424,
+              5376,
+              3328,
+              1280
+            ],
+            [
+              768,
+              2816,
+              4864,
+              6912,
+              8960,
+              11008,
+              13056,
+              15104,
+              17152,
+              19200,
+              21248,
+              23296,
+              25344,
+              27392,
+              29440,
+              39680
+            ]
+          ]
+        },
+        {
+          "layer": 16,
+          "dictionary": "mask",
+          "k": 80,
+          "start": 98304,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              32000,
+              29952,
+              27904,
+              25856,
+              23808,
+              21760,
+              19712,
+              17664,
+              15616,
+              13568,
+              11520,
+              9472,
+              7424,
+              5376,
+              3328,
+              1280
+            ],
+            [
+              768,
+              2816,
+              4864,
+              6912,
+              8960,
+              11008,
+              13056,
+              15104,
+              17152,
+              19200,
+              21248,
+              23296,
+              25344,
+              27392,
+              29440,
+              39680
+            ]
+          ]
+        },
+        {
+          "layer": 16,
+          "dictionary": "unmask",
+          "k": 80,
+          "start": 114688,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              32000,
+              29952,
+              27904,
+              25856,
+              23808,
+              21760,
+              19712,
+              17664,
+              15616,
+              13568,
+              11520,
+              9472,
+              7424,
+              5376,
+              3328,
+              1280
+            ],
+            [
+              768,
+              2816,
+              4864,
+              6912,
+              8960,
+              11008,
+              13056,
+              15104,
+              17152,
+              19200,
+              21248,
+              23296,
+              25344,
+              27392,
+              29440,
+              39680
+            ]
+          ]
+        },
+        {
+          "layer": 26,
+          "dictionary": "mask",
+          "k": 80,
+          "start": 131072,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              32000,
+              29952,
+              27904,
+              25856,
+              23808,
+              21760,
+              19712,
+              17664,
+              15616,
+              13568,
+              11520,
+              9472,
+              7424,
+              5376,
+              3328,
+              1280
+            ],
+            [
+              768,
+              2816,
+              4864,
+              6912,
+              8960,
+              11008,
+              13056,
+              15104,
+              17152,
+              19200,
+              21248,
+              23296,
+              25344,
+              27392,
+              29440,
+              39680
+            ]
+          ]
+        },
+        {
+          "layer": 26,
+          "dictionary": "unmask",
+          "k": 80,
+          "start": 147456,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              32000,
+              29952,
+              27904,
+              25856,
+              23808,
+              21760,
+              19712,
+              17664,
+              15616,
+              13568,
+              11520,
+              9472,
+              7424,
+              5376,
+              3328,
+              1280
+            ],
+            [
+              768,
+              2816,
+              4864,
+              6912,
+              8960,
+              11008,
+              13056,
+              15104,
+              17152,
+              19200,
+              21248,
+              23296,
+              25344,
+              27392,
+              29440,
+              39680
+            ]
+          ]
+        },
+        {
+          "layer": 30,
+          "dictionary": "mask",
+          "k": 80,
+          "start": 163840,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              32000,
+              29952,
+              27904,
+              25856,
+              23808,
+              21760,
+              19712,
+              17664,
+              15616,
+              13568,
+              11520,
+              9472,
+              7424,
+              5376,
+              3328,
+              1280
+            ],
+            [
+              768,
+              2816,
+              4864,
+              6912,
+              8960,
+              11008,
+              13056,
+              15104,
+              17152,
+              19200,
+              21248,
+              23296,
+              25344,
+              27392,
+              29440,
+              39680
+            ]
+          ]
+        },
+        {
+          "layer": 30,
+          "dictionary": "unmask",
+          "k": 80,
+          "start": 180224,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              32000,
+              29952,
+              27904,
+              25856,
+              23808,
+              21760,
+              19712,
+              17664,
+              15616,
+              13568,
+              11520,
+              9472,
+              7424,
+              5376,
+              3328,
+              1280
+            ],
+            [
+              768,
+              2816,
+              4864,
+              6912,
+              8960,
+              11008,
+              13056,
+              15104,
+              17152,
+              19200,
+              21248,
+              23296,
+              25344,
+              27392,
+              29440,
+              39680
+            ]
+          ]
+        }
+      ],
+      "bounds": [
+        -7.351473331451416,
+        16.718713760375977,
+        -5.180737495422363,
+        10.347663879394531
+      ],
+      "projection": {
+        "method": "UMAP",
+        "umap_version": "0.5.9.post2",
+        "input": "Per-feature L2-normalized log1p state-conditioned mean and sqrt activation-rate temporal profiles, concatenated with equal norm",
+        "fit_count": 12000,
+        "transformed_count": 157634,
+        "fit_strata": [
+          {
+            "layer": 1,
+            "dictionary": "mask",
+            "eligible": 14547,
+            "fit_count": 1000
+          },
+          {
+            "layer": 1,
+            "dictionary": "unmask",
+            "eligible": 14748,
+            "fit_count": 1000
+          },
+          {
+            "layer": 6,
+            "dictionary": "mask",
+            "eligible": 13537,
+            "fit_count": 1000
+          },
+          {
+            "layer": 6,
+            "dictionary": "unmask",
+            "eligible": 12184,
+            "fit_count": 1000
+          },
+          {
+            "layer": 11,
+            "dictionary": "mask",
+            "eligible": 13756,
+            "fit_count": 1000
+          },
+          {
+            "layer": 11,
+            "dictionary": "unmask",
+            "eligible": 13670,
+            "fit_count": 1000
+          },
+          {
+            "layer": 16,
+            "dictionary": "mask",
+            "eligible": 13936,
+            "fit_count": 1000
+          },
+          {
+            "layer": 16,
+            "dictionary": "unmask",
+            "eligible": 14326,
+            "fit_count": 1000
+          },
+          {
+            "layer": 26,
+            "dictionary": "mask",
+            "eligible": 13481,
+            "fit_count": 1000
+          },
+          {
+            "layer": 26,
+            "dictionary": "unmask",
+            "eligible": 14368,
+            "fit_count": 1000
+          },
+          {
+            "layer": 30,
+            "dictionary": "mask",
+            "eligible": 15083,
+            "fit_count": 1000
+          },
+          {
+            "layer": 30,
+            "dictionary": "unmask",
+            "eligible": 15998,
+            "fit_count": 1000
+          }
+        ],
+        "fit_ids_sha256": "a8db658bbb2f671b2f357d25102ffcf2c5dab5c27746511ad393dea1278f1993",
+        "fit_sampling": "Seeded uniform sample of up to 1000 temporally observed features per SAE dictionary",
+        "n_neighbors": 25,
+        "min_dist": 0.15,
+        "metric": "euclidean",
+        "fit_epochs": 120,
+        "transform_epochs": 40,
+        "transform_batch_size": 20000,
+        "seed": 42,
+        "elapsed_seconds": 49.882596832932904,
+        "zero_temporal_policy": "Excluded from UMAP; NaN coordinates displayed in a labeled ordinal strip",
+        "meaning": "Similarity of observed temporal activation profiles, not semantic vectors; model embeddings are independent"
+      },
+      "mapped_count": 169634,
+      "unmapped_count": 26974,
+      "absolute_log_scale": {
+        "combined": 0.4484761655330658,
+        "mask": 0.6989642381668091,
+        "unmask": 0.4303096830844879
+      },
+      "checksums": {
+        "positions": {
+          "sha256": "a6e9568567e4062b5fb99e634ea69a9875dbf4febee450954dd4dea2fce842cf",
+          "bytes": 1572864
+        },
+        "mean": {
+          "sha256": "658148ceb3f1c5e077af1c1203e44473a6a084ebd0b4775beb27579fda0961ae",
+          "bytes": 25165824
+        },
+        "rate": {
+          "sha256": "3efa283120adfe452dbdd56d4fff91ce71053e441c00bbc33721774723c7dcfd",
+          "bytes": 25165824
+        },
+        "peaks": {
+          "sha256": "15694c833d48e0cec5c7896504a8c859b8d7845b91f6d9be7bfb606ed0e37bb4",
+          "bytes": 2359296
+        },
+        "observed": {
+          "sha256": "9c22732171c37ff653c472e8617ade618e34565dc8dc62f07cdf6eb3ff45f7d6",
+          "bytes": 196608
+        }
+      },
+      "corpus_or_temporal_observed_count": 191405
+    },
+    "dream": {
+      "count": 196608,
+      "files": {
+        "positions": "dream.positions.bin",
+        "mean": "dream.mean.bin",
+        "rate": "dream.rate.bin",
+        "peaks": "dream.peaks.bin",
+        "observed": "dream.observed.bin"
+      },
+      "dictionaries": [
+        {
+          "layer": 1,
+          "dictionary": "mask",
+          "k": 80,
+          "start": 0,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              2024,
+              1904,
+              1776,
+              1648,
+              1520,
+              1392,
+              1264,
+              1136,
+              1008,
+              880,
+              752,
+              624,
+              496,
+              368,
+              240,
+              112
+            ],
+            [
+              24,
+              144,
+              272,
+              400,
+              528,
+              656,
+              784,
+              912,
+              1040,
+              1168,
+              1296,
+              1424,
+              1552,
+              1680,
+              1808,
+              2448
+            ]
+          ]
+        },
+        {
+          "layer": 1,
+          "dictionary": "unmask",
+          "k": 80,
+          "start": 16384,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              2024,
+              1904,
+              1776,
+              1648,
+              1520,
+              1392,
+              1264,
+              1136,
+              1008,
+              880,
+              752,
+              624,
+              496,
+              368,
+              240,
+              112
+            ],
+            [
+              24,
+              144,
+              272,
+              400,
+              528,
+              656,
+              784,
+              912,
+              1040,
+              1168,
+              1296,
+              1424,
+              1552,
+              1680,
+              1808,
+              2448
+            ]
+          ]
+        },
+        {
+          "layer": 5,
+          "dictionary": "mask",
+          "k": 80,
+          "start": 32768,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              2024,
+              1904,
+              1776,
+              1648,
+              1520,
+              1392,
+              1264,
+              1136,
+              1008,
+              880,
+              752,
+              624,
+              496,
+              368,
+              240,
+              112
+            ],
+            [
+              24,
+              144,
+              272,
+              400,
+              528,
+              656,
+              784,
+              912,
+              1040,
+              1168,
+              1296,
+              1424,
+              1552,
+              1680,
+              1808,
+              2448
+            ]
+          ]
+        },
+        {
+          "layer": 5,
+          "dictionary": "unmask",
+          "k": 80,
+          "start": 49152,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              2024,
+              1904,
+              1776,
+              1648,
+              1520,
+              1392,
+              1264,
+              1136,
+              1008,
+              880,
+              752,
+              624,
+              496,
+              368,
+              240,
+              112
+            ],
+            [
+              24,
+              144,
+              272,
+              400,
+              528,
+              656,
+              784,
+              912,
+              1040,
+              1168,
+              1296,
+              1424,
+              1552,
+              1680,
+              1808,
+              2448
+            ]
+          ]
+        },
+        {
+          "layer": 10,
+          "dictionary": "mask",
+          "k": 80,
+          "start": 65536,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              2024,
+              1904,
+              1776,
+              1648,
+              1520,
+              1392,
+              1264,
+              1136,
+              1008,
+              880,
+              752,
+              624,
+              496,
+              368,
+              240,
+              112
+            ],
+            [
+              24,
+              144,
+              272,
+              400,
+              528,
+              656,
+              784,
+              912,
+              1040,
+              1168,
+              1296,
+              1424,
+              1552,
+              1680,
+              1808,
+              2448
+            ]
+          ]
+        },
+        {
+          "layer": 10,
+          "dictionary": "unmask",
+          "k": 80,
+          "start": 81920,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              2024,
+              1904,
+              1776,
+              1648,
+              1520,
+              1392,
+              1264,
+              1136,
+              1008,
+              880,
+              752,
+              624,
+              496,
+              368,
+              240,
+              112
+            ],
+            [
+              24,
+              144,
+              272,
+              400,
+              528,
+              656,
+              784,
+              912,
+              1040,
+              1168,
+              1296,
+              1424,
+              1552,
+              1680,
+              1808,
+              2448
+            ]
+          ]
+        },
+        {
+          "layer": 14,
+          "dictionary": "mask",
+          "k": 80,
+          "start": 98304,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              2024,
+              1904,
+              1776,
+              1648,
+              1520,
+              1392,
+              1264,
+              1136,
+              1008,
+              880,
+              752,
+              624,
+              496,
+              368,
+              240,
+              112
+            ],
+            [
+              24,
+              144,
+              272,
+              400,
+              528,
+              656,
+              784,
+              912,
+              1040,
+              1168,
+              1296,
+              1424,
+              1552,
+              1680,
+              1808,
+              2448
+            ]
+          ]
+        },
+        {
+          "layer": 14,
+          "dictionary": "unmask",
+          "k": 80,
+          "start": 114688,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              2024,
+              1904,
+              1776,
+              1648,
+              1520,
+              1392,
+              1264,
+              1136,
+              1008,
+              880,
+              752,
+              624,
+              496,
+              368,
+              240,
+              112
+            ],
+            [
+              24,
+              144,
+              272,
+              400,
+              528,
+              656,
+              784,
+              912,
+              1040,
+              1168,
+              1296,
+              1424,
+              1552,
+              1680,
+              1808,
+              2448
+            ]
+          ]
+        },
+        {
+          "layer": 23,
+          "dictionary": "mask",
+          "k": 80,
+          "start": 131072,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              2024,
+              1904,
+              1776,
+              1648,
+              1520,
+              1392,
+              1264,
+              1136,
+              1008,
+              880,
+              752,
+              624,
+              496,
+              368,
+              240,
+              112
+            ],
+            [
+              24,
+              144,
+              272,
+              400,
+              528,
+              656,
+              784,
+              912,
+              1040,
+              1168,
+              1296,
+              1424,
+              1552,
+              1680,
+              1808,
+              2448
+            ]
+          ]
+        },
+        {
+          "layer": 23,
+          "dictionary": "unmask",
+          "k": 80,
+          "start": 147456,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              2024,
+              1904,
+              1776,
+              1648,
+              1520,
+              1392,
+              1264,
+              1136,
+              1008,
+              880,
+              752,
+              624,
+              496,
+              368,
+              240,
+              112
+            ],
+            [
+              24,
+              144,
+              272,
+              400,
+              528,
+              656,
+              784,
+              912,
+              1040,
+              1168,
+              1296,
+              1424,
+              1552,
+              1680,
+              1808,
+              2448
+            ]
+          ]
+        },
+        {
+          "layer": 27,
+          "dictionary": "mask",
+          "k": 80,
+          "start": 163840,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              2024,
+              1904,
+              1776,
+              1648,
+              1520,
+              1392,
+              1264,
+              1136,
+              1008,
+              880,
+              752,
+              624,
+              496,
+              368,
+              240,
+              112
+            ],
+            [
+              24,
+              144,
+              272,
+              400,
+              528,
+              656,
+              784,
+              912,
+              1040,
+              1168,
+              1296,
+              1424,
+              1552,
+              1680,
+              1808,
+              2448
+            ]
+          ]
+        },
+        {
+          "layer": 27,
+          "dictionary": "unmask",
+          "k": 80,
+          "start": 180224,
+          "count": 16384,
+          "temporal_exposure": [
+            [
+              2024,
+              1904,
+              1776,
+              1648,
+              1520,
+              1392,
+              1264,
+              1136,
+              1008,
+              880,
+              752,
+              624,
+              496,
+              368,
+              240,
+              112
+            ],
+            [
+              24,
+              144,
+              272,
+              400,
+              528,
+              656,
+              784,
+              912,
+              1040,
+              1168,
+              1296,
+              1424,
+              1552,
+              1680,
+              1808,
+              2448
+            ]
+          ]
+        }
+      ],
+      "bounds": [
+        -8.486474990844727,
+        24.202003479003906,
+        -7.032851696014404,
+        24.275623321533203
+      ],
+      "projection": {
+        "method": "UMAP",
+        "umap_version": "0.5.9.post2",
+        "input": "Per-feature L2-normalized log1p state-conditioned mean and sqrt activation-rate temporal profiles, concatenated with equal norm",
+        "fit_count": 12000,
+        "transformed_count": 85445,
+        "fit_strata": [
+          {
+            "layer": 1,
+            "dictionary": "mask",
+            "eligible": 5750,
+            "fit_count": 1000
+          },
+          {
+            "layer": 1,
+            "dictionary": "unmask",
+            "eligible": 5109,
+            "fit_count": 1000
+          },
+          {
+            "layer": 5,
+            "dictionary": "mask",
+            "eligible": 8264,
+            "fit_count": 1000
+          },
+          {
+            "layer": 5,
+            "dictionary": "unmask",
+            "eligible": 6437,
+            "fit_count": 1000
+          },
+          {
+            "layer": 10,
+            "dictionary": "mask",
+            "eligible": 9067,
+            "fit_count": 1000
+          },
+          {
+            "layer": 10,
+            "dictionary": "unmask",
+            "eligible": 8516,
+            "fit_count": 1000
+          },
+          {
+            "layer": 14,
+            "dictionary": "mask",
+            "eligible": 9241,
+            "fit_count": 1000
+          },
+          {
+            "layer": 14,
+            "dictionary": "unmask",
+            "eligible": 9036,
+            "fit_count": 1000
+          },
+          {
+            "layer": 23,
+            "dictionary": "mask",
+            "eligible": 9327,
+            "fit_count": 1000
+          },
+          {
+            "layer": 23,
+            "dictionary": "unmask",
+            "eligible": 8909,
+            "fit_count": 1000
+          },
+          {
+            "layer": 27,
+            "dictionary": "mask",
+            "eligible": 8851,
+            "fit_count": 1000
+          },
+          {
+            "layer": 27,
+            "dictionary": "unmask",
+            "eligible": 8938,
+            "fit_count": 1000
+          }
+        ],
+        "fit_ids_sha256": "dd26518223fff8a2730fe6943c7f6044daba2d046e7fdf65312e92db656609fa",
+        "fit_sampling": "Seeded uniform sample of up to 1000 temporally observed features per SAE dictionary",
+        "n_neighbors": 25,
+        "min_dist": 0.15,
+        "metric": "euclidean",
+        "fit_epochs": 120,
+        "transform_epochs": 40,
+        "transform_batch_size": 20000,
+        "seed": 42,
+        "elapsed_seconds": 17.611920375027694,
+        "zero_temporal_policy": "Excluded from UMAP; NaN coordinates displayed in a labeled ordinal strip",
+        "meaning": "Similarity of observed temporal activation profiles, not semantic vectors; model embeddings are independent"
+      },
+      "mapped_count": 97445,
+      "unmapped_count": 99163,
+      "absolute_log_scale": {
+        "combined": 0.7559019327163696,
+        "mask": 1.3300813436508179,
+        "unmask": 0.6409187316894531
+      },
+      "checksums": {
+        "positions": {
+          "sha256": "a29789fc0b16a9612e5157d694475ff3252e961dd742de7b850f04130e4f3c4d",
+          "bytes": 1572864
+        },
+        "mean": {
+          "sha256": "b4bb24712db5d0a75b3f2098d84676010a94a60cc1579f953b61bab109ff4bae",
+          "bytes": 25165824
+        },
+        "rate": {
+          "sha256": "803e07ca0dc7714cb6bfc5434a26ba6ac630072d452949852717f57a41ecc291",
+          "bytes": 25165824
+        },
+        "peaks": {
+          "sha256": "843b99f7927f70f86944b180fb1b6323ae0a83afeb03cd40280ea31df62090e2",
+          "bytes": 2359296
+        },
+        "observed": {
+          "sha256": "d3246acce6ba18390bfb20127749b6296cbd681e351929b36508851abff45433",
+          "bytes": 196608
+        }
+      },
+      "corpus_or_temporal_observed_count": 169228
+    }
+  },
+  "coordinate_policy": "One fixed UMAP per model; slider changes measured activation only",
+  "time_resolution": "16 aggregated bins of input states from 64 generation steps plus terminal input; bins 0-14 contain 4 steps, bin15 steps60-64",
+  "time_means": "Conditional on MASK state; combined means use state exposure weighting",
+  "sources": {
+    "dream": "Dream pilot 50048 corpus tokens / 8 temporal prompts",
+    "llada": "LLaDA expanded 1000064 corpus tokens / 128 temporal prompts"
+  },
+  "projection_runtime_packages": {
+    "numpy": "2.3.5",
+    "umap-learn": "0.5.9.post2",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "numba": "0.68.0",
+    "pynndescent": "0.6.0"
+  },
+  "reference_url": "https://umap-learn.readthedocs.io/en/latest/transform.html"
+}

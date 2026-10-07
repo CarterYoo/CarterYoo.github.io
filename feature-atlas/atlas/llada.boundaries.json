@@ -1,0 +1,436 @@
+{
+  "schema_version": 1,
+  "model": "llada",
+  "coordinates": "normalized_umap",
+  "categories": [
+    {
+      "id": 0,
+      "key": "language_form",
+      "label": "Language form",
+      "color": "#8ed4ac",
+      "group_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "outline": true,
+      "count": 17705,
+      "mapped_count": 17313,
+      "unmapped_count": 392,
+      "contours": [
+        {
+          "level": "core",
+          "polygons": [
+            [
+              [
+                -0.3625,
+                0.225
+              ],
+              [
+                -0.4125,
+                0.225
+              ],
+              [
+                -0.45,
+                0.1875
+              ],
+              [
+                -0.5,
+                0.0625
+              ],
+              [
+                -0.65,
+                -0.0625
+              ],
+              [
+                -0.7,
+                -0.1875
+              ],
+              [
+                -0.775,
+                -0.2875
+              ],
+              [
+                -0.775,
+                -0.3375
+              ],
+              [
+                -0.8,
+                -0.3625
+              ],
+              [
+                -0.775,
+                -0.3875
+              ],
+              [
+                -0.775,
+                -0.4375
+              ],
+              [
+                -0.6375,
+                -0.525
+              ],
+              [
+                -0.4125,
+                -0.525
+              ],
+              [
+                -0.35,
+                -0.4875
+              ],
+              [
+                -0.3,
+                -0.4125
+              ],
+              [
+                -0.3,
+                -0.3625
+              ],
+              [
+                -0.275,
+                -0.3375
+              ],
+              [
+                -0.275,
+                -0.1625
+              ],
+              [
+                -0.325,
+                -0.0375
+              ],
+              [
+                -0.325,
+                0.1875
+              ],
+              [
+                -0.3625,
+                0.225
+              ]
+            ]
+          ]
+        }
+      ],
+      "mapped_support": 17313,
+      "label_position": [
+        -0.5125000000000024,
+        -0.3125000000000031
+      ],
+      "actual_candidates_inside": 11770,
+      "density_threshold": 13.57459159793985,
+      "retained_smoothed_mass_fraction": 0.54586126382563,
+      "minimum_enrichment": 1.15
+    },
+    {
+      "id": 1,
+      "key": "numbers_symbols",
+      "label": "Numbers & symbols",
+      "color": "#f3d579",
+      "group_ids": [
+        4,
+        5,
+        10
+      ],
+      "outline": true,
+      "count": 4160,
+      "mapped_count": 4083,
+      "unmapped_count": 77,
+      "contours": [
+        {
+          "level": "core",
+          "polygons": [
+            [
+              [
+                -0.5625,
+                0.275
+              ],
+              [
+                -0.6875,
+                0.225
+              ],
+              [
+                -0.725,
+                0.1625
+              ],
+              [
+                -0.725,
+                -0.0375
+              ],
+              [
+                -0.7,
+                -0.0875
+              ],
+              [
+                -0.8,
+                -0.3125
+              ],
+              [
+                -0.8,
+                -0.3875
+              ],
+              [
+                -0.7625,
+                -0.425
+              ],
+              [
+                -0.6875,
+                -0.425
+              ],
+              [
+                -0.5375,
+                -0.325
+              ],
+              [
+                -0.3875,
+                -0.325
+              ],
+              [
+                -0.3625,
+                -0.3
+              ],
+              [
+                -0.3125,
+                -0.3
+              ],
+              [
+                -0.225,
+                -0.2125
+              ],
+              [
+                -0.25,
+                -0.1125
+              ],
+              [
+                -0.325,
+                0.0375
+              ],
+              [
+                -0.4,
+                0.1125
+              ],
+              [
+                -0.45,
+                0.2375
+              ],
+              [
+                -0.5375,
+                0.25
+              ],
+              [
+                -0.5625,
+                0.275
+              ]
+            ]
+          ]
+        }
+      ],
+      "mapped_support": 4083,
+      "label_position": [
+        -0.5625000000000022,
+        0.06249999999999556
+      ],
+      "actual_candidates_inside": 2639,
+      "density_threshold": 3.046229447434713,
+      "retained_smoothed_mass_fraction": 0.5238997206856137,
+      "minimum_enrichment": 1.15
+    },
+    {
+      "id": 2,
+      "key": "visible_cues",
+      "label": "Visible word cues",
+      "color": "#c4adf0",
+      "group_ids": [
+        7,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "outline": true,
+      "count": 67543,
+      "mapped_count": 57774,
+      "unmapped_count": 9769,
+      "contours": [
+        {
+          "level": "core",
+          "polygons": [
+            [
+              [
+                0.1125,
+                0.15
+              ],
+              [
+                0.0625,
+                0.15
+              ],
+              [
+                -0.0,
+                0.1125
+              ],
+              [
+                -0.075,
+                -0.0125
+              ],
+              [
+                -0.075,
+                -0.0625
+              ],
+              [
+                -0.225,
+                -0.1875
+              ],
+              [
+                -0.25,
+                -0.3125
+              ],
+              [
+                -0.4,
+                -0.5375
+              ],
+              [
+                -0.3375,
+                -0.625
+              ],
+              [
+                -0.2125,
+                -0.65
+              ],
+              [
+                -0.0625,
+                -0.575
+              ],
+              [
+                0.1,
+                -0.4125
+              ],
+              [
+                0.175,
+                -0.2125
+              ],
+              [
+                0.175,
+                0.0875
+              ],
+              [
+                0.1125,
+                0.15
+              ]
+            ]
+          ]
+        }
+      ],
+      "mapped_support": 57774,
+      "label_position": [
+        -0.11250000000000382,
+        -0.36250000000000293
+      ],
+      "actual_candidates_inside": 25878,
+      "density_threshold": 30.154595279573726,
+      "retained_smoothed_mass_fraction": 0.350616653853131,
+      "minimum_enrichment": 1.15
+    },
+    {
+      "id": 3,
+      "key": "technical_context",
+      "label": "Technical contexts",
+      "color": "#79c8f2",
+      "group_ids": [
+        6,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14
+      ],
+      "outline": true,
+      "count": 328,
+      "mapped_count": 328,
+      "unmapped_count": 0,
+      "contours": [],
+      "mapped_support": 328,
+      "label_position": null,
+      "omitted_reason": "Fewer than 500 mapped candidates; a coarse outline would overstate sparse evidence"
+    },
+    {
+      "id": 4,
+      "key": "unresolved",
+      "label": "Unresolved",
+      "color": "#617b8a",
+      "group_ids": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "outline": false,
+      "count": 106872,
+      "mapped_count": 90136,
+      "unmapped_count": 16736,
+      "contours": [],
+      "label_position": null,
+      "omitted_reason": "Unresolved tags do not define an interpreted category boundary"
+    }
+  ],
+  "normalization": {
+    "center": [
+      4.68362021446228,
+      2.583463191986084
+    ],
+    "half_range": 12.035093545913696
+  },
+  "method": {
+    "grid": 96,
+    "range": [
+      -1.2,
+      1.2
+    ],
+    "gaussian_sigma_cells": 4,
+    "target_high_density_mass": 0.6,
+    "minimum_enrichment_over_global_share": 1.15,
+    "minimum_mapped_support": 500,
+    "maximum_large_components_per_category": 4,
+    "small_component_minimum_cells": 24,
+    "small_component_minimum_actual_candidates": 30,
+    "small_component_minimum_actual_category_fraction": 0.01,
+    "background_density_floor_fraction_of_global_peak": 0.002,
+    "boundary_closing_cells": 2,
+    "polygon_tolerance_cells": 0.6,
+    "references": [
+      "https://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.gaussian_filter.html",
+      "https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.find_contours"
+    ]
+  },
+  "positions_sha256": "a6e9568567e4062b5fb99e634ea69a9875dbf4febee450954dd4dea2fce842cf",
+  "support_count_scope": "actual_candidates_inside counts the retained raster core; simplified drawn polygons can change edge containment slightly",
+  "limits": "Soft spatial density cores may overlap. Points outside a core keep their original tags. Boundary interiors are not semantic classifiers or causal regions."
+}
