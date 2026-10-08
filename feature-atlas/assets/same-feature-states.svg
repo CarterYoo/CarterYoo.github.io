@@ -17,7 +17,7 @@
 <text x="693.75" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">14</text>
 <text x="732.25" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">15</text>
 <text x="770.75" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">16</text>
-<text x="0" y="123" font-family="Arial" font-size="23" font-weight="bold" fill="#233648" text-anchor="start">Current MASK</text>
+<text x="0" y="123" font-family="Arial" font-size="23" font-weight="bold" fill="#7942B5" text-anchor="start">Current MASK</text>
 <rect x="174.000" y="100" width="36.500" height="32" fill="#f5f8fb"/>
 <rect x="212.500" y="100" width="36.500" height="32" fill="#f5f8fa"/>
 <rect x="251.000" y="100" width="36.500" height="32" fill="#f3f7f9"/>
@@ -34,7 +34,7 @@
 <rect x="674.500" y="100" width="36.500" height="32" fill="#2f6f88"/>
 <rect x="713.000" y="100" width="36.500" height="32" fill="#307089"/>
 <rect x="751.500" y="100" width="36.500" height="32" fill="#39768e"/>
-<text x="0" y="161" font-family="Arial" font-size="23" font-weight="bold" fill="#233648" text-anchor="start">Revealed</text>
+<text x="0" y="161" font-family="Arial" font-size="23" font-weight="bold" fill="#108E89" text-anchor="start">Revealed</text>
 <rect x="174.000" y="138" width="36.500" height="32" fill="#2a6b85"/>
 <rect x="212.500" y="138" width="36.500" height="32" fill="#276a84"/>
 <rect x="251.000" y="138" width="36.500" height="32" fill="#266983"/>
