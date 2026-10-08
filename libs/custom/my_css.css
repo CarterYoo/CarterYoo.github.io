@@ -374,6 +374,8 @@ html { scroll-padding-top: 0; }
 .tft-card .tft-queue { color: #8b9197; font-size: 10px; letter-spacing: .08rem; text-transform: uppercase; margin: 0; }
 .tft-card .tft-rank { display: flex; align-items: center; gap: 8px; margin: 6px 0 6px; font-size: 1.6rem; font-weight: 600; color: #25292d; }
 .tft-dot { width: 10px; height: 10px; border-radius: 50%; background: #c9cdd1; flex: none; }
+.tft-chart { display: block; width: 100%; height: auto; margin: 4px 0 6px; }
+.tft-chart text { font: 8.5px 'Raleway', sans-serif; fill: #8b9197; }
 .tft-card .tft-games { color: #667079; font-size: 1.15rem; margin: 0; }
 .tft-card .tft-games:empty { display: none; }
 @media (max-width: 749px) { .about-grid { grid-template-columns: 1fr; gap: 24px; } .tft-card { max-width: 420px; } }

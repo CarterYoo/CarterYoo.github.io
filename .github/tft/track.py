@@ -42,11 +42,18 @@ def main():
         tier, _, division = league[0].partition(" ")
         current = {"tier": tier, "rank": division, "lp": league[1], "games": ranked.get("games", 0)}
 
+    # every ranked game this set: [unix time, "TIER DIVISION", LP, game number]
+    history = []
+    for t, label, lp, n in sorted(data.get("rankHistory", []), key=lambda e: e[0]):
+        tier, _, division = label.partition(" ")
+        history.append({"t": t, "tier": tier, "rank": division, "lp": lp, "n": n})
+
     OUT.write_text(json.dumps({
         "riotId": f"{NAME}#{TAG}",
         "source": URL,
         "updated": int(time.time()),
         "current": current,
+        "history": history,
     }, indent=1) + "\n")
 
 
