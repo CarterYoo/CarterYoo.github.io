@@ -19,25 +19,14 @@ jobs:
       - uses: actions/checkout@v4
         with:
           sparse-checkout: .github/tft
-      - name: Load previous data
+      - name: Read rank from tactics.tools
+        env:
+          RIOT_ID: "ActionableInterp#31415"
+          TFT_SITE_REGION: na
         run: |
           mkdir -p data
-          curl -fsSL "https://raw.githubusercontent.com/${{ github.repository }}/tft-data/rank.json" -o data/rank.json || rm -f data/rank.json
-      - name: Fetch rank from the Riot API
-        env:
-          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
-          RIOT_ID: "ActionableInterp#31415"
-          TFT_PLATFORM: na1
-          TFT_REGION: americas
-        run: |
-          if [ -z "$RIOT_API_KEY" ]; then
-            echo "RIOT_API_KEY is not set yet; skipping this run."
-            echo "SKIP=1" >> "$GITHUB_ENV"
-            exit 0
-          fi
           python3 .github/tft/track.py data/rank.json
       - name: Publish to the tft-data branch
-        if: env.SKIP != '1'
         run: |
           cd data
           git init -q -b tft-data

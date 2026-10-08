@@ -20,7 +20,7 @@
       if (!cur) { rankEl.textContent = 'Unranked'; return; }
       rankEl.textContent = APEX.includes(cur.tier) ? `${title(cur.tier)} · ${cur.lp} LP` : `${title(cur.tier)} ${cur.rank} · ${cur.lp} LP`;
       dot.style.background = COLORS[cur.tier] || '';
-      const games = (cur.wins || 0) + (cur.losses || 0);
+      const games = cur.games ?? (cur.wins || 0) + (cur.losses || 0);
       gamesEl.textContent = `${games} ranked game${games === 1 ? '' : 's'}`;
     })
     .catch(() => { rankEl.textContent = 'Rank unavailable right now'; });
