@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="798" height="222" viewBox="0 0 798 222">
+<text x="0" y="30" font-family="Arial" font-size="28" font-weight="bold" fill="#233648" text-anchor="start">Same feature, different states</text>
+<text x="0" y="59" font-family="Arial" font-size="22" font-weight="normal" fill="#233648" text-anchor="start">LLaDA · L1 MASK-trained SAE · f4937</text>
+<text x="193.25" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">1</text>
+<text x="231.75" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">2</text>
+<text x="270.25" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">3</text>
+<text x="308.75" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">4</text>
+<text x="347.25" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">5</text>
+<text x="385.75" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">6</text>
+<text x="424.25" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">7</text>
+<text x="462.75" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">8</text>
+<text x="501.25" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">9</text>
+<text x="539.75" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">10</text>
+<text x="578.25" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">11</text>
+<text x="616.75" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">12</text>
+<text x="655.25" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">13</text>
+<text x="693.75" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">14</text>
+<text x="732.25" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">15</text>
+<text x="770.75" y="89" font-family="Arial" font-size="21" font-weight="normal" fill="#233648" text-anchor="middle">16</text>
+<text x="0" y="123" font-family="Arial" font-size="23" font-weight="bold" fill="#7942B5" text-anchor="start">Current MASK</text>
+<rect x="174.000" y="100" width="36.500" height="32" fill="#f5f8fb"/>
+<rect x="212.500" y="100" width="36.500" height="32" fill="#f5f8fa"/>
+<rect x="251.000" y="100" width="36.500" height="32" fill="#f3f7f9"/>
+<rect x="289.500" y="100" width="36.500" height="32" fill="#ecf2f5"/>
+<rect x="328.000" y="100" width="36.500" height="32" fill="#dfe9ee"/>
+<rect x="366.500" y="100" width="36.500" height="32" fill="#ccdce3"/>
+<rect x="405.000" y="100" width="36.500" height="32" fill="#b5ccd6"/>
+<rect x="443.500" y="100" width="36.500" height="32" fill="#96b6c4"/>
+<rect x="482.000" y="100" width="36.500" height="32" fill="#76a0b1"/>
+<rect x="520.500" y="100" width="36.500" height="32" fill="#568a9f"/>
+<rect x="559.000" y="100" width="36.500" height="32" fill="#3e7991"/>
+<rect x="597.500" y="100" width="36.500" height="32" fill="#33728a"/>
+<rect x="636.000" y="100" width="36.500" height="32" fill="#2f6f88"/>
+<rect x="674.500" y="100" width="36.500" height="32" fill="#2f6f88"/>
+<rect x="713.000" y="100" width="36.500" height="32" fill="#307089"/>
+<rect x="751.500" y="100" width="36.500" height="32" fill="#39768e"/>
+<text x="0" y="161" font-family="Arial" font-size="23" font-weight="bold" fill="#108E89" text-anchor="start">Revealed</text>
+<rect x="174.000" y="138" width="36.500" height="32" fill="#2a6b85"/>
+<rect x="212.500" y="138" width="36.500" height="32" fill="#276a84"/>
+<rect x="251.000" y="138" width="36.500" height="32" fill="#266983"/>
+<rect x="289.500" y="138" width="36.500" height="32" fill="#266983"/>
+<rect x="328.000" y="138" width="36.500" height="32" fill="#266983"/>
+<rect x="366.500" y="138" width="36.500" height="32" fill="#266983"/>
+<rect x="405.000" y="138" width="36.500" height="32" fill="#266983"/>
+<rect x="443.500" y="138" width="36.500" height="32" fill="#276984"/>
+<rect x="482.000" y="138" width="36.500" height="32" fill="#276a84"/>
+<rect x="520.500" y="138" width="36.500" height="32" fill="#276a84"/>
+<rect x="559.000" y="138" width="36.500" height="32" fill="#286a84"/>
+<rect x="597.500" y="138" width="36.500" height="32" fill="#296b85"/>
+<rect x="636.000" y="138" width="36.500" height="32" fill="#2a6c85"/>
+<rect x="674.500" y="138" width="36.500" height="32" fill="#2b6d86"/>
+<rect x="713.000" y="138" width="36.500" height="32" fill="#2f6f88"/>
+<rect x="751.500" y="138" width="36.500" height="32" fill="#39768e"/>
+<text x="0" y="210" font-family="Arial" font-size="17" font-weight="normal" fill="#233648" text-anchor="start">Positive incidence (%)</text>
+<text x="210" y="190" font-family="Arial" font-size="14" font-weight="normal" fill="#233648" text-anchor="start">0</text>
+<text x="310" y="190" font-family="Arial" font-size="14" font-weight="normal" fill="#233648" text-anchor="end">100</text>
+<rect x="210.000" y="199" width="3.125" height="9" fill="#f6f9fb"/>
+<rect x="213.125" y="199" width="3.125" height="9" fill="#eff4f7"/>
+<rect x="216.250" y="199" width="3.125" height="9" fill="#e8eff3"/>
+<rect x="219.375" y="199" width="3.125" height="9" fill="#e1ebef"/>
+<rect x="222.500" y="199" width="3.125" height="9" fill="#dae6eb"/>
+<rect x="225.625" y="199" width="3.125" height="9" fill="#d3e1e7"/>
+<rect x="228.750" y="199" width="3.125" height="9" fill="#ccdce3"/>
+<rect x="231.875" y="199" width="3.125" height="9" fill="#c5d7df"/>
+<rect x="235.000" y="199" width="3.125" height="9" fill="#bfd3db"/>
+<rect x="238.125" y="199" width="3.125" height="9" fill="#b8ced7"/>
+<rect x="241.250" y="199" width="3.125" height="9" fill="#b1c9d3"/>
+<rect x="244.375" y="199" width="3.125" height="9" fill="#aac4cf"/>
+<rect x="247.500" y="199" width="3.125" height="9" fill="#a3bfcb"/>
+<rect x="250.625" y="199" width="3.125" height="9" fill="#9cbbc7"/>
+<rect x="253.750" y="199" width="3.125" height="9" fill="#95b6c3"/>
+<rect x="256.875" y="199" width="3.125" height="9" fill="#8eb1bf"/>
+<rect x="260.000" y="199" width="3.125" height="9" fill="#87acbb"/>
+<rect x="263.125" y="199" width="3.125" height="9" fill="#80a7b7"/>
+<rect x="266.250" y="199" width="3.125" height="9" fill="#79a2b3"/>
+<rect x="269.375" y="199" width="3.125" height="9" fill="#729eaf"/>
+<rect x="272.500" y="199" width="3.125" height="9" fill="#6b99ab"/>
+<rect x="275.625" y="199" width="3.125" height="9" fill="#6494a7"/>
+<rect x="278.750" y="199" width="3.125" height="9" fill="#5d8fa3"/>
+<rect x="281.875" y="199" width="3.125" height="9" fill="#568a9f"/>
+<rect x="285.000" y="199" width="3.125" height="9" fill="#50869b"/>
+<rect x="288.125" y="199" width="3.125" height="9" fill="#498197"/>
+<rect x="291.250" y="199" width="3.125" height="9" fill="#427c93"/>
+<rect x="294.375" y="199" width="3.125" height="9" fill="#3b778f"/>
+<rect x="297.500" y="199" width="3.125" height="9" fill="#34728b"/>
+<rect x="300.625" y="199" width="3.125" height="9" fill="#2d6e87"/>
+<rect x="303.750" y="199" width="3.125" height="9" fill="#266983"/>
+<rect x="306.875" y="199" width="3.125" height="9" fill="#1f647f"/>
+<text x="346" y="210" font-family="Arial" font-size="20" font-weight="normal" fill="#233648" text-anchor="start">MASK: late | Revealed: persistent</text>
+</svg>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Feature Evolution in Diffusion Language Models</title>
+<meta name="description" content="Explore measured SAE feature activity across denoising in Dream and LLaDA. Interactive temporal maps, feature descriptions, and activation evidence.">
+<meta property="og:title" content="Feature Evolution in Diffusion Language Models">
+<meta property="og:description" content="An interactive temporal feature atlas for Dream and LLaDA.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://carteryoo.github.io/feature-atlas">
+<meta property="og:image" content="https://carteryoo.github.io/feature-atlas/assets/atlas-preview.png">
+<link rel="canonical" href="https://carteryoo.github.io/feature-atlas">
+<style>
+:root{color-scheme:light;--ink:#142536;--muted:#556473;--line:#d7dfe5;--accent:#17667d}*{box-sizing:border-box}
+html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#fff;font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1060px;margin:auto;padding:52px 36px 36px}.event{font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:0 0 22px}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:500;font-size:clamp(36px,5.2vw,62px);line-height:1.1;letter-spacing:-.035em;max-width:960px;margin:0 0 24px}
+.authors{font-size:17px;margin:0 0 7px}.affiliations{font-size:14px;color:var(--muted);margin:0 0 25px}.summary{max-width:760px;margin:0 0 28px;font-size:20px;line-height:1.5}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:15px 22px;margin:0 0 36px}a{color:var(--accent);text-underline-offset:4px}
+.primary{display:inline-flex;align-items:center;gap:18px;background:var(--ink);color:#fff;text-decoration:none;padding:12px 19px;font-weight:600;border:1px solid var(--ink);border-radius:3px}
+.primary:hover{background:#24465b}.primary:focus-visible,a:focus-visible{outline:3px solid #239ab6;outline-offset:5px}.actions .secondary{font-size:15px}
+figure{margin:0}video{display:block;width:100%;aspect-ratio:16/9;background:#081219;border:1px solid var(--line);border-radius:3px}figcaption{font-size:13px;color:var(--muted);margin:10px 0 0}
+section{padding:31px 0 0}h2{font-size:22px;font-weight:600;margin:0 0 16px}.steps{display:grid;grid-template-columns:repeat(3,1fr);list-style:none;counter-reset:step;margin:0;padding:0;gap:27px}
+.steps li{counter-increment:step;border-top:1px solid var(--line);padding-top:14px;font-size:15px}.steps li:before{content:"0"counter(step);display:block;color:var(--muted);font-size:12px;margin-bottom:7px}
+.steps strong{display:block;font-size:17px;font-weight:600;margin-bottom:5px}.steps p{margin:0;color:var(--muted)}
+.resources{display:flex;flex-wrap:wrap;gap:12px 24px;border-top:1px solid var(--line);padding:21px 0 0;margin:30px 0 0;font-size:14px}
+footer{font-size:12px;color:var(--muted);padding-top:25px}.scope{margin:0;max-width:890px}footer p+p{margin-top:7px}
+@media(max-width:650px){main{padding:31px 20px 24px}.event{font-size:11px;margin-bottom:19px}h1{font-size:39px}.authors{font-size:15px}.summary{font-size:18px}.actions{gap:14px 18px;margin-bottom:25px}.primary{width:100%;justify-content:space-between}.steps{grid-template-columns:1fr;gap:19px}.steps li{font-size:14px}section{padding-top:24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body><main>
+<p class="event">COLM 2026 · NonAR-LM Workshop</p>
+<h1>Feature Evolution in<br>Diffusion Language Models</h1>
+<p class="authors">Meliksah Yorulmazlar · Justice Sefas · Seunghyun Yoo · Lulu Shao</p>
+<p class="affiliations">Purdue University · UC San Diego · Rensselaer Polytechnic Institute</p>
+<p class="summary">Explore how sparse autoencoder features change across denoising in Dream and LLaDA.</p>
+<nav class="actions" aria-label="Project resources">
+<a class="primary" href="atlas/">Explore the Feature Atlas <span aria-hidden="true">→</span></a>
+<a class="secondary" href="downloads/poster.pdf">Poster (PDF)</a>
+<a class="secondary" href="downloads/atlas-interface-source.zip">Atlas UI source</a>
+</nav>
+<figure><img src="assets/same-feature-states.svg" style="display:block;width:100%;height:auto" alt="The same LLaDA feature across 16 bins: late MASK activation and persistent revealed activation, on a shared 0–100% incidence scale.">
+<figcaption>Same feature, different states · LLaDA L1 f4937 · Measured positive incidence</figcaption></figure>
+<section aria-labelledby="explore-heading"><h2 id="explore-heading">Explore the temporal atlas</h2>
+<ol class="steps"><li><strong>Choose a model</strong><p>Switch between Dream and LLaDA.</p></li>
+<li><strong>Move through time</strong><p>Move the 16-bin slider. Feature positions remain fixed; activity changes.</p></li>
+<li><strong>Inspect a feature</strong><p>Hover or tap a point for a short candidate description.</p></li></ol></section>
+<div class="resources"><a href="atlas/">Interactive atlas</a><a href="downloads/poster.pdf">34 × 34-inch poster</a><a href="https://github.com/jds8/SAE4DLM-CE" target="_blank" rel="noopener">DLM-Scope SAE code</a><a href="https://arxiv.org/abs/2602.05859" target="_blank" rel="noopener">Related paper: DLM-Scope</a><a href="downloads/atlas-interface-source.zip">Atlas UI source</a></div>
+<footer><p class="scope">196,608 SAE features per model · Six layers · Two dictionary families · Precomputed measured activations</p>
+<p class="scope">Descriptions and category boundaries represent provisional context associations. The public release includes the original atlas overview and feature evidence.</p></footer>
+</main></body></html>

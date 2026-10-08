@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "presentation": "One white map, two model buttons, one 16-bin time slider; no video, table, sidebar or visible statistics",
+  "coordinates": "Original fixed temporal UMAP. No refitting, coordinate motion or cross-model alignment",
+  "drawn_inventory": "Only features with finite original UMAP coordinates; ordinal zero-profile strips are omitted",
+  "measurement": "Combined conditional mean, weighted by original per-dictionary MASK/Revealed exposures, divided by original combined 16-bin peak",
+  "time": "UI1/16–16/16 corresponds exactly to original bins0–15; the final bin includes terminal state",
+  "camera": {
+    "rule": "Static per-model coordinate median center. Fit the original three major core boundary extents with42pxdesktop/22pxphone margins; peripheral points can be clipped by the viewport",
+    "models": {
+      "llada": {
+        "center": [
+          -0.38924742531651857,
+          -0.20347943903862611
+        ],
+        "span": [
+          1.1284948506330372,
+          0.9569588780772522
+        ],
+        "core_bounds": [
+          -0.8,
+          0.175,
+          -0.65,
+          0.275
+        ],
+        "mapped_count": 169634
+      },
+      "dream": {
+        "center": [
+          0.14825830075159102,
+          0.09923632776111485
+        ],
+        "span": [
+          0.896516601503182,
+          1.0015273444777701
+        ],
+        "core_bounds": [
+          -0.3,
+          0.575,
+          -0.325,
+          0.6
+        ],
+        "mapped_count": 97445
+      }
+    }
+  },
+  "display_only_changes": {
+    "background": "white",
+    "category_colors": [
+      "#39797a",
+      "#ae7b2c",
+      "#8871aa",
+      "#668dac",
+      "#b4bdc5"
+    ],
+    "outlines": "Original core contours for three major categories",
+    "brief_labels": [
+      "Language form",
+      "Numbers & symbols",
+      "Word cues"
+    ],
+    "tooltip": "Original candidate title or first sentence of reviewed explanation, shortened to170characters"
+  },
+  "assets": {
+    "llada": {
+      "positions": {
+        "file": "llada.positions.bin",
+        "sha256": "a6e9568567e4062b5fb99e634ea69a9875dbf4febee450954dd4dea2fce842cf"
+      },
+      "mean": {
+        "file": "llada.mean.bin",
+        "sha256": "658148ceb3f1c5e077af1c1203e44473a6a084ebd0b4775beb27579fda0961ae"
+      },
+      "peaks": {
+        "file": "llada.peaks.bin",
+        "sha256": "15694c833d48e0cec5c7896504a8c859b8d7845b91f6d9be7bfb606ed0e37bb4"
+      }
+    },
+    "dream": {
+      "positions": {
+        "file": "dream.positions.bin",
+        "sha256": "a29789fc0b16a9612e5157d694475ff3252e961dd742de7b850f04130e4f3c4d"
+      },
+      "mean": {
+        "file": "dream.mean.bin",
+        "sha256": "b4bb24712db5d0a75b3f2098d84676010a94a60cc1579f953b61bab109ff4bae"
+      },
+      "peaks": {
+        "file": "dream.peaks.bin",
+        "sha256": "843b99f7927f70f86944b180fb1b6323ae0a83afeb03cd40280ea31df62090e2"
+      }
+    }
+  },
+  "source_arrays_unchanged": true,
+  "finite_mean_rate_patterns": "Verified identical in the original arrays; only means are fetched because the UI has no activation-rate metric"
+}

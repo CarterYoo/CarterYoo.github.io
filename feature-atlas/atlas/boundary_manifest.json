@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "coordinates": "normalized_umap",
+  "models": {
+    "llada": {
+      "file": "llada.boundaries.json",
+      "count": 196608,
+      "mapped_count": 169634,
+      "positions_sha256": "a6e9568567e4062b5fb99e634ea69a9875dbf4febee450954dd4dea2fce842cf"
+    },
+    "dream": {
+      "file": "dream.boundaries.json",
+      "count": 196608,
+      "mapped_count": 97445,
+      "positions_sha256": "a29789fc0b16a9612e5157d694475ff3252e961dd742de7b850f04130e4f3c4d"
+    }
+  },
+  "scope": "Static full mapped inventory. No coordinate changes, time-dependent boundaries, or exclusive semantic partition.",
+  "method": {
+    "grid": 96,
+    "range": [
+      -1.2,
+      1.2
+    ],
+    "gaussian_sigma_cells": 4,
+    "target_high_density_mass": 0.6,
+    "minimum_enrichment_over_global_share": 1.15,
+    "minimum_mapped_support": 500,
+    "maximum_large_components_per_category": 4,
+    "small_component_minimum_cells": 24,
+    "small_component_minimum_actual_candidates": 30,
+    "small_component_minimum_actual_category_fraction": 0.01,
+    "background_density_floor_fraction_of_global_peak": 0.002,
+    "boundary_closing_cells": 2,
+    "polygon_tolerance_cells": 0.6,
+    "references": [
+      "https://docs.scipy.org/doc/scipy/reference/generated/scipy.ndimage.gaussian_filter.html",
+      "https://scikit-image.org/docs/stable/api/skimage.measure.html#skimage.measure.find_contours"
+    ]
+  }
+}
