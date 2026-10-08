@@ -48,8 +48,12 @@
   const gamesEl = document.getElementById('tft-games');
   const dot = document.getElementById('tft-dot');
 
-  const load = () => fetch(`${card.dataset.src}?t=${Date.now()}`, { cache: 'no-store' })
-    .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+  // GitHub's contents API refreshes within about a minute; raw.githubusercontent.com can lag by up to five.
+  const fromApi = () => fetch(card.dataset.api, { headers: { Accept: 'application/vnd.github.raw+json' }, cache: 'no-store' })
+    .then((r) => (r.ok ? r.json() : Promise.reject(r.status)));
+  const fromRaw = () => fetch(`${card.dataset.src}?t=${Date.now()}`, { cache: 'no-store' })
+    .then((r) => (r.ok ? r.json() : Promise.reject(r.status)));
+  const load = () => (card.dataset.api ? fromApi().catch(fromRaw) : fromRaw())
     .then((data) => {
       const cur = data.current;
       if (!data.updated) { rankEl.textContent = 'Tracking starts soon'; return; }

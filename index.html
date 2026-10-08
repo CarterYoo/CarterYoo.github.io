@@ -9,7 +9,7 @@ layout: default
       {% if site.data.content.interests.size > 0 %}<div class="research-interests"><span class="interest-label">Interests</span>{% for interest in site.data.content.interests %}<span class="interest">{{ interest | escape }}</span>{% endfor %}</div>{% endif %}
     </div>
     {% if site.data.main_info.tft_riot_id %}
-    <details class="tft-card" id="tft" data-src="{{ site.data.main_info.tft_data_url }}">
+    <details class="tft-card" id="tft" data-src="{{ site.data.main_info.tft_data_url }}" data-api="https://api.github.com/repos/CarterYoo/CarterYoo.github.io/contents/rank.json?ref=tft-data">
       <summary class="tft-summary"><span>Track my TFT rank <span class="tft-fun">(for fun)</span></span><span class="tft-chevron" aria-hidden="true">▾</span></summary>
       <div class="tft-body">
       <p class="tft-queue">Ranked · NA</p>
