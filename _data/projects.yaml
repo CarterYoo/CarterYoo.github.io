@@ -6,9 +6,11 @@
       "subtitle": "An evidence-linked behaviour catalogue and interactive atlas for multi-agent logs. Tracks how behaviours change and spread across AI agents, with every claim linked to the events behind it.",
       "thumbnail": "/assets/projects/ethogram-demo.gif",
       "image_alt": "Clip from the Ethogram demo: the behaviour atlas plays through the record's phases, with behaviour clusters, influence links lighting up, and a phase timeline along the bottom.",
-      "image_caption": "Behaviour atlas from the project demo.",
+      "image_caption": "Open the live behaviour atlas.",
       "image_width": 640,
       "image_height": 360,
+      "demo": "/ethogram/",
+      "demo_label": "Live demo",
       "url": "https://github.com/CarterYoo/ethogram",
       "link_label": "Code",
       "selected": "y"
