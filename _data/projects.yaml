@@ -16,7 +16,7 @@
       "selected": "y"
     },
     {
-      "title": "Margin Arena",
+      "title": "MARGIN Arena: Agents Under Resource Limits",
       "context": "AI Incident Response Hackathon · Apart Research · Sep. 2026",
       "subtitle": "A reproducible environment for studying AI agents under token, time, verification, tool-call, and session limits. Connects external tasks with inspectable model records.",
       "thumbnail": "/assets/projects/margin-arena.gif",
@@ -26,10 +26,11 @@
       "image_height": 600,
       "url": "https://github.com/CarterYoo/margin-arena",
       "link_label": "Code",
-      "selected": "y"
+      "selected": "y",
+      "paper": "https://apartresearch.com/sprints/projects/margin-arena-agents-under-resource-limits-630i"
     },
     {
-      "title": "DLM-Control",
+      "title": "Denoising Trajectories as Early-Warning Signals for Diffusion Language Model Control",
       "context": "AI Control Hackathon · Apart Research / Redwood Research · Mar. 2026",
       "subtitle": "SAE-based monitoring and steering for diffusion language models. Trajectory monitoring detects attacks at a mean denoising step of 9.60, compared with 63.00 for output-only checks on the main benchmark.",
       "thumbnail": "/assets/projects/dlm-control.gif",
@@ -39,7 +40,8 @@
       "image_height": 600,
       "url": "https://github.com/CarterYoo/DLM-Control",
       "link_label": "Code",
-      "selected": "y"
+      "selected": "y",
+      "paper": "https://apartresearch.com/sprints/projects/denoising-trajectories-as-earlywarning-signals-for-diffusion-language-model-control-31cb"
     }
   ]
 }

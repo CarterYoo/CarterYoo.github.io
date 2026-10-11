@@ -62,7 +62,7 @@ layout: default
       <h3>{{ project.title | escape }}</h3>
       <p>{{ project.subtitle | escape }}</p>
       {% if project.technologies %}<p class="project-tech">{{ project.technologies | escape }}</p>{% endif %}
-      {% if project.demo or project.url %}<div class="paper-buttons">{% if project.demo and project.demo != '' %}<a class="button" href="{{ project.demo | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ project.demo_label | default: 'Demo' | escape }} <span aria-hidden="true">↗</span></a>{% endif %}{% if project.url and project.url != '' %}<a class="button" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.link_label | default: 'Code' | escape }} <span aria-hidden="true">↗</span></a>{% endif %}</div>{% endif %}
+      {% if project.demo or project.url or project.paper %}<div class="paper-buttons">{% if project.paper and project.paper != '' %}<a class="button" href="{{ project.paper }}" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a>{% endif %}{% if project.demo and project.demo != '' %}<a class="button" href="{{ project.demo | prepend: site.baseurl }}" target="_blank" rel="noopener noreferrer">{{ project.demo_label | default: 'Demo' | escape }} <span aria-hidden="true">↗</span></a>{% endif %}{% if project.url and project.url != '' %}<a class="button" href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.link_label | default: 'Code' | escape }} <span aria-hidden="true">↗</span></a>{% endif %}</div>{% endif %}
     </div>
   </article>
   {% endfor %}
