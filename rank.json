@@ -1,0 +1,1049 @@
+{
+ "riotId": "ActionableInterp#31415",
+ "source": "https://tactics.tools/player/na/ActionableInterp/31415",
+ "updated": 1791683173,
+ "current": {
+  "tier": "EMERALD",
+  "rank": "III",
+  "lp": 65,
+  "games": 152
+ },
+ "history": [
+  {
+   "t": 1787804946,
+   "tier": "SILVER",
+   "rank": "III",
+   "lp": 98,
+   "n": 5
+  },
+  {
+   "t": 1787849350,
+   "tier": "SILVER",
+   "rank": "II",
+   "lp": 58,
+   "n": 6
+  },
+  {
+   "t": 1787851749,
+   "tier": "SILVER",
+   "rank": "I",
+   "lp": 33,
+   "n": 7
+  },
+  {
+   "t": 1787854149,
+   "tier": "SILVER",
+   "rank": "I",
+   "lp": 97,
+   "n": 8
+  },
+  {
+   "t": 1787856548,
+   "tier": "GOLD",
+   "rank": "IV",
+   "lp": 35,
+   "n": 9
+  },
+  {
+   "t": 1787862549,
+   "tier": "GOLD",
+   "rank": "IV",
+   "lp": 9,
+   "n": 10
+  },
+  {
+   "t": 1787934554,
+   "tier": "GOLD",
+   "rank": "IV",
+   "lp": 22,
+   "n": 11
+  },
+  {
+   "t": 1787938155,
+   "tier": "GOLD",
+   "rank": "IV",
+   "lp": 6,
+   "n": 12
+  },
+  {
+   "t": 1787940555,
+   "tier": "GOLD",
+   "rank": "IV",
+   "lp": 0,
+   "n": 13
+  },
+  {
+   "t": 1787958555,
+   "tier": "GOLD",
+   "rank": "IV",
+   "lp": 37,
+   "n": 14
+  },
+  {
+   "t": 1787960955,
+   "tier": "GOLD",
+   "rank": "IV",
+   "lp": 76,
+   "n": 15
+  },
+  {
+   "t": 1787966955,
+   "tier": "GOLD",
+   "rank": "IV",
+   "lp": 66,
+   "n": 16
+  },
+  {
+   "t": 1787969351,
+   "tier": "GOLD",
+   "rank": "III",
+   "lp": 22,
+   "n": 17
+  },
+  {
+   "t": 1787971750,
+   "tier": "GOLD",
+   "rank": "III",
+   "lp": 12,
+   "n": 18
+  },
+  {
+   "t": 1787974152,
+   "tier": "GOLD",
+   "rank": "III",
+   "lp": 51,
+   "n": 19
+  },
+  {
+   "t": 1787976550,
+   "tier": "GOLD",
+   "rank": "III",
+   "lp": 65,
+   "n": 20
+  },
+  {
+   "t": 1787978953,
+   "tier": "GOLD",
+   "rank": "III",
+   "lp": 49,
+   "n": 21
+  },
+  {
+   "t": 1788024553,
+   "tier": "GOLD",
+   "rank": "III",
+   "lp": 21,
+   "n": 22
+  },
+  {
+   "t": 1788026954,
+   "tier": "GOLD",
+   "rank": "III",
+   "lp": 32,
+   "n": 23
+  },
+  {
+   "t": 1788028155,
+   "tier": "GOLD",
+   "rank": "III",
+   "lp": 42,
+   "n": 24
+  },
+  {
+   "t": 1788031754,
+   "tier": "GOLD",
+   "rank": "III",
+   "lp": 53,
+   "n": 25
+  },
+  {
+   "t": 1788038955,
+   "tier": "GOLD",
+   "rank": "III",
+   "lp": 36,
+   "n": 26
+  },
+  {
+   "t": 1788041356,
+   "tier": "GOLD",
+   "rank": "III",
+   "lp": 88,
+   "n": 27
+  },
+  {
+   "t": 1788052155,
+   "tier": "GOLD",
+   "rank": "III",
+   "lp": 98,
+   "n": 28
+  },
+  {
+   "t": 1788054552,
+   "tier": "GOLD",
+   "rank": "II",
+   "lp": 32,
+   "n": 29
+  },
+  {
+   "t": 1788070152,
+   "tier": "GOLD",
+   "rank": "II",
+   "lp": 14,
+   "n": 30
+  },
+  {
+   "t": 1788072553,
+   "tier": "GOLD",
+   "rank": "II",
+   "lp": 24,
+   "n": 31
+  },
+  {
+   "t": 1788114555,
+   "tier": "GOLD",
+   "rank": "II",
+   "lp": 55,
+   "n": 32
+  },
+  {
+   "t": 1788116954,
+   "tier": "GOLD",
+   "rank": "II",
+   "lp": 65,
+   "n": 33
+  },
+  {
+   "t": 1788122950,
+   "tier": "GOLD",
+   "rank": "I",
+   "lp": 28,
+   "n": 34
+  },
+  {
+   "t": 1788127748,
+   "tier": "GOLD",
+   "rank": "I",
+   "lp": 78,
+   "n": 35
+  },
+  {
+   "t": 1788130152,
+   "tier": "GOLD",
+   "rank": "I",
+   "lp": 62,
+   "n": 36
+  },
+  {
+   "t": 1788132549,
+   "tier": "GOLD",
+   "rank": "I",
+   "lp": 94,
+   "n": 37
+  },
+  {
+   "t": 1788152950,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 6,
+   "n": 38
+  },
+  {
+   "t": 1788196153,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 16,
+   "n": 39
+  },
+  {
+   "t": 1788198552,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 26,
+   "n": 40
+  },
+  {
+   "t": 1788211755,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 0,
+   "n": 41
+  },
+  {
+   "t": 1788295756,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 0,
+   "n": 42
+  },
+  {
+   "t": 1788336555,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 10,
+   "n": 43
+  },
+  {
+   "t": 1788409754,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 45,
+   "n": 44
+  },
+  {
+   "t": 1788412159,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 96,
+   "n": 45
+  },
+  {
+   "t": 1788414551,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 6,
+   "n": 46
+  },
+  {
+   "t": 1788416952,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 0,
+   "n": 47
+  },
+  {
+   "t": 1788559754,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 50,
+   "n": 48
+  },
+  {
+   "t": 1788575354,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 2,
+   "n": 49
+  },
+  {
+   "t": 1788577754,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 0,
+   "n": 50
+  },
+  {
+   "t": 1788641358,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 35,
+   "n": 51
+  },
+  {
+   "t": 1788643755,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 57,
+   "n": 52
+  },
+  {
+   "t": 1788671355,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 93,
+   "n": 53
+  },
+  {
+   "t": 1788672555,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 46,
+   "n": 54
+  },
+  {
+   "t": 1788674956,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 69,
+   "n": 55
+  },
+  {
+   "t": 1788676154,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 47,
+   "n": 56
+  },
+  {
+   "t": 1788737355,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 67,
+   "n": 57
+  },
+  {
+   "t": 1788749360,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 33,
+   "n": 58
+  },
+  {
+   "t": 1788757757,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 82,
+   "n": 59
+  },
+  {
+   "t": 1788760158,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 92,
+   "n": 60
+  },
+  {
+   "t": 1788761360,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 82,
+   "n": 61
+  },
+  {
+   "t": 1788762558,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 34,
+   "n": 62
+  },
+  {
+   "t": 1788764959,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 14,
+   "n": 63
+  },
+  {
+   "t": 1788767358,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 4,
+   "n": 64
+  },
+  {
+   "t": 1788808161,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 0,
+   "n": 65
+  },
+  {
+   "t": 1788810560,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 20,
+   "n": 66
+  },
+  {
+   "t": 1788812957,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 67,
+   "n": 67
+  },
+  {
+   "t": 1788815358,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 20,
+   "n": 68
+  },
+  {
+   "t": 1788817762,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 0,
+   "n": 69
+  },
+  {
+   "t": 1788818971,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 75,
+   "n": 70
+  },
+  {
+   "t": 1788899369,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 85,
+   "n": 71
+  },
+  {
+   "t": 1788901771,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 65,
+   "n": 72
+  },
+  {
+   "t": 1789199374,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 17,
+   "n": 73
+  },
+  {
+   "t": 1789201776,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 39,
+   "n": 74
+  },
+  {
+   "t": 1789202975,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 29,
+   "n": 75
+  },
+  {
+   "t": 1789205378,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 8,
+   "n": 76
+  },
+  {
+   "t": 1789240174,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 28,
+   "n": 77
+  },
+  {
+   "t": 1789242577,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 7,
+   "n": 78
+  },
+  {
+   "t": 1789244977,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 0,
+   "n": 79
+  },
+  {
+   "t": 1789247379,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 49,
+   "n": 80
+  },
+  {
+   "t": 1789248576,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 39,
+   "n": 81
+  },
+  {
+   "t": 1789250979,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 86,
+   "n": 82
+  },
+  {
+   "t": 1789272568,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 21,
+   "n": 83
+  },
+  {
+   "t": 1789274963,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 55,
+   "n": 84
+  },
+  {
+   "t": 1789277367,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 45,
+   "n": 85
+  },
+  {
+   "t": 1789279766,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 35,
+   "n": 86
+  },
+  {
+   "t": 1789285765,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 0,
+   "n": 87
+  },
+  {
+   "t": 1789288173,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 75,
+   "n": 88
+  },
+  {
+   "t": 1789290563,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 10,
+   "n": 89
+  },
+  {
+   "t": 1789321764,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 0,
+   "n": 90
+  },
+  {
+   "t": 1789324164,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 10,
+   "n": 91
+  },
+  {
+   "t": 1789325366,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 0,
+   "n": 92
+  },
+  {
+   "t": 1789327778,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 75,
+   "n": 93
+  },
+  {
+   "t": 1789336219,
+   "tier": "PLATINUM",
+   "rank": "IV",
+   "lp": 85,
+   "n": 94
+  },
+  {
+   "t": 1789338592,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 30,
+   "n": 95
+  },
+  {
+   "t": 1789346997,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 20,
+   "n": 96
+  },
+  {
+   "t": 1789349393,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 66,
+   "n": 97
+  },
+  {
+   "t": 1789350592,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 76,
+   "n": 98
+  },
+  {
+   "t": 1789355393,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 66,
+   "n": 99
+  },
+  {
+   "t": 1789363792,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 86,
+   "n": 100
+  },
+  {
+   "t": 1789366192,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 96,
+   "n": 101
+  },
+  {
+   "t": 1789367581,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 44,
+   "n": 102
+  },
+  {
+   "t": 1789516202,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 7,
+   "n": 103
+  },
+  {
+   "t": 1789518601,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 54,
+   "n": 104
+  },
+  {
+   "t": 1789523399,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 44,
+   "n": 105
+  },
+  {
+   "t": 1789525803,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 77,
+   "n": 106
+  },
+  {
+   "t": 1789542601,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 25,
+   "n": 107
+  },
+  {
+   "t": 1789544999,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 3,
+   "n": 108
+  },
+  {
+   "t": 1789618205,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 13,
+   "n": 109
+  },
+  {
+   "t": 1789633804,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 46,
+   "n": 110
+  },
+  {
+   "t": 1789763409,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 93,
+   "n": 111
+  },
+  {
+   "t": 1789765811,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 83,
+   "n": 112
+  },
+  {
+   "t": 1789785010,
+   "tier": "PLATINUM",
+   "rank": "III",
+   "lp": 73,
+   "n": 113
+  },
+  {
+   "t": 1789787387,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 20,
+   "n": 114
+  },
+  {
+   "t": 1789798183,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 10,
+   "n": 115
+  },
+  {
+   "t": 1789800583,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 0,
+   "n": 116
+  },
+  {
+   "t": 1789802983,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 48,
+   "n": 117
+  },
+  {
+   "t": 1789805381,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 68,
+   "n": 118
+  },
+  {
+   "t": 1789806580,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 19,
+   "n": 119
+  },
+  {
+   "t": 1789848584,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 66,
+   "n": 120
+  },
+  {
+   "t": 1789850987,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 84,
+   "n": 121
+  },
+  {
+   "t": 1789852182,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 94,
+   "n": 122
+  },
+  {
+   "t": 1789854584,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 84,
+   "n": 123
+  },
+  {
+   "t": 1789855781,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 34,
+   "n": 124
+  },
+  {
+   "t": 1789871382,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 81,
+   "n": 125
+  },
+  {
+   "t": 1789873788,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 71,
+   "n": 126
+  },
+  {
+   "t": 1789874982,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 48,
+   "n": 127
+  },
+  {
+   "t": 1789888186,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 12,
+   "n": 128
+  },
+  {
+   "t": 1789938586,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 45,
+   "n": 129
+  },
+  {
+   "t": 1789940988,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 65,
+   "n": 130
+  },
+  {
+   "t": 1789978158,
+   "tier": "PLATINUM",
+   "rank": "I",
+   "lp": 1,
+   "n": 131
+  },
+  {
+   "t": 1790062160,
+   "tier": "PLATINUM",
+   "rank": "I",
+   "lp": 0,
+   "n": 132
+  },
+  {
+   "t": 1790116156,
+   "tier": "PLATINUM",
+   "rank": "I",
+   "lp": 47,
+   "n": 133
+  },
+  {
+   "t": 1790118558,
+   "tier": "PLATINUM",
+   "rank": "I",
+   "lp": 37,
+   "n": 134
+  },
+  {
+   "t": 1790196559,
+   "tier": "PLATINUM",
+   "rank": "I",
+   "lp": 16,
+   "n": 135
+  },
+  {
+   "t": 1790202559,
+   "tier": "PLATINUM",
+   "rank": "I",
+   "lp": 0,
+   "n": 136
+  },
+  {
+   "t": 1790204993,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 75,
+   "n": 137
+  },
+  {
+   "t": 1790322588,
+   "tier": "PLATINUM",
+   "rank": "II",
+   "lp": 95,
+   "n": 138
+  },
+  {
+   "t": 1790458157,
+   "tier": "PLATINUM",
+   "rank": "I",
+   "lp": 5,
+   "n": 139
+  },
+  {
+   "t": 1790460558,
+   "tier": "PLATINUM",
+   "rank": "I",
+   "lp": 51,
+   "n": 140
+  },
+  {
+   "t": 1790470159,
+   "tier": "PLATINUM",
+   "rank": "I",
+   "lp": 86,
+   "n": 141
+  },
+  {
+   "t": 1790476158,
+   "tier": "PLATINUM",
+   "rank": "I",
+   "lp": 64,
+   "n": 142
+  },
+  {
+   "t": 1790491842,
+   "tier": "EMERALD",
+   "rank": "IV",
+   "lp": 10,
+   "n": 143
+  },
+  {
+   "t": 1790557848,
+   "tier": "EMERALD",
+   "rank": "IV",
+   "lp": 42,
+   "n": 144
+  },
+  {
+   "t": 1790713851,
+   "tier": "EMERALD",
+   "rank": "IV",
+   "lp": 63,
+   "n": 145
+  },
+  {
+   "t": 1790799035,
+   "tier": "EMERALD",
+   "rank": "IV",
+   "lp": 27,
+   "n": 146
+  },
+  {
+   "t": 1790801439,
+   "tier": "EMERALD",
+   "rank": "IV",
+   "lp": 61,
+   "n": 147
+  },
+  {
+   "t": 1790814625,
+   "tier": "EMERALD",
+   "rank": "IV",
+   "lp": 96,
+   "n": 148
+  },
+  {
+   "t": 1790817001,
+   "tier": "EMERALD",
+   "rank": "III",
+   "lp": 6,
+   "n": 149
+  },
+  {
+   "t": 1790825404,
+   "tier": "EMERALD",
+   "rank": "III",
+   "lp": 0,
+   "n": 150
+  },
+  {
+   "t": 1790910602,
+   "tier": "EMERALD",
+   "rank": "III",
+   "lp": 19,
+   "n": 151
+  },
+  {
+   "t": 1790923797,
+   "tier": "EMERALD",
+   "rank": "III",
+   "lp": 65,
+   "n": 152
+  }
+ ]
+}
