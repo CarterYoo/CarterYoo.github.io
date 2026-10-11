@@ -16,6 +16,8 @@ papers:
     paper_pdf: "https://openreview.net/forum?id=3LYTk2idOP"
     poster: "/assets/posters/feature-evolution-colm2026-poster.pdf"
     poster_preview: "/assets/posters/feature-evolution-colm2026-poster.webp"
+    demo: "/feature-atlas/atlas/"
+    demo_label: "Live demo"
     figure: "/assets/papers/feature-evolution.gif"
     figure_alt: "Animated architecture diagram: a diffusion language model with one residual stream per position and bidirectional attention between positions. Each denoising step commits confident tokens and feeds them back. An SAE reads layer l, and a heatmap tracks mask-tracking, commitment and unmasked-token features across 64 steps."
     figure_caption: "SAE features across 64 denoising steps: mask tracking, commitment, unmasked responses."
