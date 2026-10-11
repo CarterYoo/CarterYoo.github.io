@@ -379,3 +379,16 @@ html { scroll-padding-top: 0; }
 .tft-card .tft-games { color: #667079; font-size: 1.15rem; margin: 0; }
 .tft-card .tft-games:empty { display: none; }
 @media (max-width: 749px) { .about-grid { grid-template-columns: 1fr; gap: 24px; } .tft-card { max-width: 420px; } }
+
+/* Floating poster viewer */
+.poster-viewer { width: min(96vw, 1180px); height: min(94vh, 1400px); max-width: none; max-height: none; padding: 0; border: 0; border-radius: 8px; background: #fff; box-shadow: 0 24px 70px rgba(20, 26, 32, .35); overflow: hidden; }
+.poster-viewer[open] { display: flex; flex-direction: column; }
+.poster-viewer::backdrop { background: rgba(20, 26, 32, .62); }
+.poster-bar { display: flex; align-items: center; gap: 12px; padding: 10px 14px; border-bottom: 1px solid #e6ecef; }
+.poster-bar h3 { flex: 1; min-width: 0; margin: 0; font-size: 1.35rem; font-weight: 600; line-height: 1.35; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.poster-bar a, .poster-bar button { flex: none; height: 30px; line-height: 28px; padding: 0 12px; margin: 0; font-size: 11px; letter-spacing: .04rem; }
+.poster-hint { flex: none; color: #8b9197; font-size: 1.05rem; }
+.poster-stage { flex: 1; min-height: 0; overflow: auto; background: #f3f5f7; display: flex; }
+.poster-stage img { display: block; margin: auto; max-width: 100%; max-height: 100%; object-fit: contain; cursor: zoom-in; }
+.poster-stage.zoomed img { max-width: none; max-height: none; cursor: zoom-out; }
+@media (max-width: 549px) { .poster-viewer { width: 100vw; height: 100dvh; border-radius: 0; } .poster-hint { display: none; } }
