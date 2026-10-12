@@ -17,7 +17,7 @@
     },
     {
       "title": "MARGIN Arena: Agents Under Resource Limits",
-      "context": "AI Incident Response Sprint · Apart Research · Sep. 2026 · Top 25% of 230+ projects",
+      "context": "AI Incident Response Sprint · Apart Research · Sep. 2026",
       "subtitle": "A reproducible environment for studying AI agents under token, time, verification, tool-call, and session limits. Connects external tasks with inspectable model records.",
       "thumbnail": "/assets/projects/margin-arena.gif",
       "image_alt": "Animated architecture diagram: inside the arena an agent LLM, drawn as a residual stream with attention and MLP blocks, generates tokens, calls a sandbox and a verifier, and draws down five budgets. Activation hooks cache internal states; when the token budget runs out the trial ends and the saved record feeds SAE and probe analysis.",
@@ -27,7 +27,8 @@
       "url": "https://github.com/CarterYoo/margin-arena",
       "link_label": "Code",
       "selected": "y",
-      "paper": "https://apartresearch.com/sprints/projects/margin-arena-agents-under-resource-limits-630i"
+      "paper": "https://apartresearch.com/sprints/projects/margin-arena-agents-under-resource-limits-630i",
+      "award": "Top 25% of 230+ projects"
     },
     {
       "title": "Denoising Trajectories as Early-Warning Signals for Diffusion Language Model Control",

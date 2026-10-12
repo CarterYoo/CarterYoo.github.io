@@ -59,6 +59,7 @@ layout: default
     {% endif %}
     <div class="project-details">
       {% if project.context %}<p class="project-context">{{ project.context | escape }}</p>{% endif %}
+      {% if project.award %}<p class="project-award">{{ project.award | escape }}</p>{% endif %}
       <h3>{{ project.title | escape }}</h3>
       <p>{{ project.subtitle | escape }}</p>
       {% if project.technologies %}<p class="project-tech">{{ project.technologies | escape }}</p>{% endif %}
