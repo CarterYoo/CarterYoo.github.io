@@ -17,7 +17,7 @@
     },
     {
       "title": "MARGIN Arena: Agents Under Resource Limits",
-      "context": "AI Incident Response Hackathon · Apart Research · Sep. 2026",
+      "context": "AI Incident Response Sprint · Apart Research · Sep. 2026 · Top 25% of 230+ projects",
       "subtitle": "A reproducible environment for studying AI agents under token, time, verification, tool-call, and session limits. Connects external tasks with inspectable model records.",
       "thumbnail": "/assets/projects/margin-arena.gif",
       "image_alt": "Animated architecture diagram: inside the arena an agent LLM, drawn as a residual stream with attention and MLP blocks, generates tokens, calls a sandbox and a verifier, and draws down five budgets. Activation hooks cache internal states; when the token budget runs out the trial ends and the saved record feeds SAE and probe analysis.",
