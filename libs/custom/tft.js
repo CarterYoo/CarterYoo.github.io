@@ -68,4 +68,7 @@
 
   let loaded = false;
   card.addEventListener('toggle', () => { if (card.open && !loaded) { loaded = true; load(); } });
+  // the open panel floats over the page, so close it on an outside click or Escape
+  document.addEventListener('click', (e) => { if (card.open && !card.contains(e.target)) card.open = false; });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && card.open) card.open = false; });
 })();
